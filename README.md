@@ -23,4 +23,33 @@ It's not necessary to include the following in the app:
 
 ![Sitemap](images/map.png)
 
+## User Stories
+
+Epic - patient account
+
+- As a patient I want to set up an account so that I can easily book appointments online.
+- As a patient I want the option of being able to close my account.
+- As a patient I want to be able to change my password.
+  
+Epic - easy log in
+
+- As a patient I want a way to sign in if I forget my patient ID number or password.
+- As a patient I want a way to sign in without having to type in my patient ID number each time.
+- As a patient I want a way to remain signed in.
+
+Epic - booking an appointment online
+
+- As a patient I want to book an appointment easily online.
+- As a patient I want the option to see the same doctor as last time.
+
+Epic - managing my appointments
+
+- As a patient I want the option to see all the appointments that I've booked.
+- As a patient I want the option of cancelling my appointment.
+- As a patient I want a confirmation of my booking.
+
+Epic - calendar
+
+- As a patient I want to see available appointments on a calendar.
+
 
