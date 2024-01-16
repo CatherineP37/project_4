@@ -19,4 +19,8 @@ It's not necessary to include the following in the app:
 - Doctor log in screen
 - Patient notes
 
-## Structure
+## Sitemap
+
+![Sitemap](images/map.png)
+
+
