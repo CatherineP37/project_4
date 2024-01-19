@@ -58,3 +58,8 @@ These are wireframes for the mobile screens.
 
 ![wireframes](images/wireframes.png)
 
+## Database Schema
+
+
+
+
