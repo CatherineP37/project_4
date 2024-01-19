@@ -60,6 +60,6 @@ These are wireframes for the mobile screens.
 
 ## Database Schema
 
-
+![database schema](images/database_schema.png)
 
 
