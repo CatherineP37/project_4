@@ -50,3 +50,9 @@ class Doctor_5_availability(models.Model):
     appointment_id = models.IntegerField()
     date = models.DateField()
     time = models.TimeField()
+
+
+class Doctor_6_availability(models.Model):
+    appointment_id = models.IntegerField()
+    date = models.DateField()
+    time = models.TimeField()
