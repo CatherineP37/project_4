@@ -11,3 +11,12 @@ class Patients(models.Model):
     email_address = models.EmailField()
     postal_address = models.CharField()
     phone_number = models.IntegerField()
+
+
+class Appointments(models.Model):
+    appointment_id = models.IntegerField()
+    patient_id_number = models.OneToOneField(
+        Patients, on_delete=models.CASCADE)
+    doctor_id_number = models.IntegerField()
+    date = models.DateField()
+    time = models.TimeField()
