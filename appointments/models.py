@@ -38,3 +38,9 @@ class Doctor_3_availability(models.Model):
     appointment_id = models.IntegerField()
     date = models.DateField()
     time = models.TimeField()
+
+
+class Doctor_4_availability(models.Model):
+    appointment_id = models.IntegerField()
+    date = models.DateField()
+    time = models.TimeField()
