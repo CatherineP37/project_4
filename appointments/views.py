@@ -7,4 +7,6 @@ from django.http import HttpResponse
 
 
 class PatientsList(generic.ListView):
-    model = Patients()
+    queryset = Patients.objects.all()
+    template_name = "appointments/index.html"
+    paginate_by = 6
