@@ -1,19 +1,18 @@
 {% extends "base.html" %} {% block content %}
 <div class="main">
-  <!-- Illustration -->
-  <section id="illustration">
-    <img
-      src="assets/images/illustration.webp"
-      alt="Illustration of a calendar."
-      class="illustration"
-    />
-  </section>
-  <section class="title_and_buttons">
-    <a href="doctors.html" class="buttons">Book an appointment</a>
 
-    <a href="appointments.html" class="buttons">View booked appointments</a>
+    <!-- Illustration -->
+    <section id="illustration">
+        <img src="assets/images/illustration.webp" alt="Illustration of a calendar." class="illustration">
+    </section>
+    <section class="right">
+        <section class="appointments">
+            <h3 style="margin: 0 0 15px 0">Upcoming appointments</h3>
+            <p>You have no upcoming appointments.</p>
+            <a href="booking.html" class="buttons">Book an appointment</a>
+            <a href="cancellation.html" class="buttons">Cancel appointment</a>
+            <section>
 
-    <a href="contact.html" class="buttons">Contact us</a>
-  </section>
+            </section>
 </div>
 {% endblock %}
