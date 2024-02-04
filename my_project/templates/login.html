@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="main">
+  <section id="illustration">
+    <img
+      src="assets/images/illustration.webp"
+      alt="Image of a calendar."
+      class="illustration_2"
+    />
+  </section>
+
+  <!-- Sign up form  -->
+  <section class="right">
+    <section class="sign_up_form">
+      <h3 style="margin: 10px">Sign in</h3>
+      <form
+        method="POST"
+        action="https://formdump.codeinstitute.net"
+        target="_blank"
+      >
+        <label for="id_number" style="font-weight: 600"
+          >Patient ID number</label
+        >
+        <br />
+        <input
+          type="text"
+          name="id_number"
+          id="id_number"
+          style="margin-bottom: 3px"
+          required
+        />
+        <label for="checkbox">Remember patient ID number</label>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <br />
+        <br />
+        <label for="password" style="font-weight: 600">Password</label>
+        <br />
+        <input type="password" name="password" id="password" />
+        <br />
+        <input type="submit" id="submit" value="Sign in" />
+      </form>
+    </section>
+  </section>
+</div>
+
+{% endblock %}
