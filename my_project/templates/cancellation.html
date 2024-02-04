@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block content %}
+<div class="main">
+  <section id="illustration">
+    <img
+      src="assets/images/illustration.webp"
+      alt="Image of a calendar."
+      class="illustration_2"
+    />
+  </section>
+
+  <!-- Lost password form  -->
+  <section class="right">
+    <div class="cancellation">
+      <h3 style="margin-bottom: 10px">Cancellation</h3>
+      <p style="font-weight: 600">
+        You have cancelled the following appointment:
+      </p>
+      <br />
+      <p>Appointment with Dr Marsh</p>
+      <p>Date: 20.12.2023</p>
+      <p>Time: 11:00</p>
+      <a href="doctors.html" class="buttons" style="margin-left: 0"
+        >Book new appointment</a
+      >
+    </div>
+  </section>
+</div>
+{% endblock %}
