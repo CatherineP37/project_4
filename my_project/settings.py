@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-catherinep37-project-4-m4w951cu2q.us2.codeanyapp.com', 'doctor-appointment-booker-567ff6ab7202.herokuapp.com']
+    '8000-catherinep37-project-4-m4w951cu2q.us2.codeanyapp.com', 'doctor-appointment-booker-567ff6ab7202.herokuapp.com' ]
 
 
 # Application definition
