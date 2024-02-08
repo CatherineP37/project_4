@@ -1,4 +1,7 @@
-{% load static %} {% url 'home' as home_url %}
+{% load static %}
+{% url 'index' as index_url %}
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,14 +16,14 @@
       name="keywords"
       content="medical centre, doctor, book an appointment online"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="{% static 'appointments/assets/css/style.css' %}" />
     <title>Appointment Booking App</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
     <!-- Font Awesome script -->
-
+    
     <script
-      src="https://kit.fontawesome.com/758be0af3f.js"
+      src="{% static 'appointments/https://kit.fontawesome.com/758be0af3f.js' %}"
       crossorigin="anonymous"
     ></script>
   </head>
@@ -70,7 +73,9 @@
     </header>
 
     <main>{% block content %} {% endblock content %}</main>
+   
 
-    <script src="assets/js/script.js"></script>
+  
+    <script src="{% static 'appointments/assets/js/script.js' %}"></script>
   </body>
 </html>
