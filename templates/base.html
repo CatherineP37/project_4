@@ -45,25 +45,25 @@
       <nav>
         <ul id="list">
           <li>
-            <a href="index.html" class="active">Home</a>
+            <a href="{% url 'index' %}" class="active">Home</a>
           </li>
           <li>
-            <a href="doctors.html">Book an appointment</a>
+            <a href="{% url 'doctors' %}">Book an appointment</a>
           </li>
           <li>
-            <a href="appointments.html">View upcoming appointments</a>
+            <a href="{% url 'appointments' %}">View upcoming appointments</a>
           </li>
           <li>
-            <a href="past_appointments.html">View past appointments</a>
+            <a href="{% url 'past_appointments' %}">View past appointments</a>
           </li>
           <li>
-            <a href="close_account.html">Close account</a>
+            <a href="{% url 'close_account' %}">Close account</a>
           </li>
           <li>
-            <a href="change_password.html">Change password</a>
+            <a href="{% url 'change_password' %}">Change password</a>
           </li>
           <li>
-            <a href="contact.html">Contact us</a>
+            <a href="{% url 'contact' %}">Contact us</a>
           </li>
         </ul>
       </nav>
