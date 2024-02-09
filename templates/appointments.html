@@ -1,4 +1,6 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
 <div class="main">
 
     <!-- Illustration -->
@@ -9,8 +11,9 @@
         <section class="appointments">
             <h3 style="margin: 0 0 15px 0">Upcoming appointments</h3>
             <p>You have no upcoming appointments.</p>
-            <a href="booking.html" class="buttons">Book an appointment</a>
-            <a href="cancellation.html" class="buttons">Cancel appointment</a>
+            <a href="{% url 'booking' %}" class="buttons">Book an appointment</a>
+            <a href="{% url 'cancellation' %}" class="buttons">Cancel appointment</a>
+            
             <section>
 
             </section>
