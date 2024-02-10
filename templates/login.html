@@ -41,6 +41,43 @@
         <br />
         <input type="submit" id="submit" value="Sign in" />
       </form>
+      {% if user.is_authenticated %}
+<li class="nav-item">
+	<a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page" href="{% url 'account_logout' %}">Logout</a>
+</li>
+{% else %}
+<li class="nav-item">
+	<a class="nav-link {% if request.path == signup_url %}active{% endif %}" aria-current="page"
+		href="{% url 'account_signup' %}">Register</a>
+</li>
+<li class="nav-item">
+	<a class="nav-link {% if request.path == login_url %}active{% endif %}" aria-current="page" href="{% url 'account_login' %}">Login</a>
+</li>
+{% endif %}
+<div>
+  <div>
+      <div>
+          <h3>{% trans "Sign In" %}</h3>
+
+          <p>{% blocktrans %}Please log in. If
+              you
+              have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
+              first.{% endblocktrans %}</p>
+      </div>
+  </div>
+  <div>
+      <div>
+          <form class="login" method="POST" action="{% url 'account_login' %}">
+              {% csrf_token %}
+              {{ form.as_p }}
+              {% if redirect_field_value %}
+              <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+              {% endif %}
+              <button type="submit">{% trans "Sign In" %}</button>
+          </form>
+      </div>
+  </div>
+</div>
     </section>
   </section>
 </div>
