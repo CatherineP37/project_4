@@ -113,10 +113,6 @@ ul li a {
     text-align: center;
 }
 
-.active {
-    font-weight: bold;
-}
-
 .show {
     display: block;
 }
