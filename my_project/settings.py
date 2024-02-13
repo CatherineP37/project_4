@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = [
-    '8000-catherinep37-project-4-m4w951cu2q.us2.codeanyapp.com', 'doctor-appointment-booker-567ff6ab7202.herokuapp.com' '8000-catherinep37-project4-co6ggzp2rim.ws-eu108.gitpod.io']
+    '8000-catherinep37-project-4-m4w951cu2q.us2.codeanyapp.com', 'doctor-appointment-booker-567ff6ab7202.herokuapp.com', '8000-catherinep37-project4-co6ggzp2rim.ws-eu108.gitpod.io',]
 
 
 # Application definition
