@@ -15,11 +15,8 @@
   <section class="right">
     <section class="sign_up">
       <h3>Sign up for an account</h3>
-      <form
-        method="POST"
-        action="https://formdump.codeinstitute.net"
-        target="_blank"
-      >
+      <form method="POST" method="POST" action="{% url 'account' %}">
+        {% csrf_token %}
         <label for="first_name" style="font-weight: 600">First name</label>
         <br />
         <input type="text" name="first_name" id="first_name" required />
