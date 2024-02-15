@@ -45,7 +45,7 @@
   <section class="right">
     <section class="sign_up">
       <h3 style="margin: 10px">Sign in</h3>
-      <form method="POST" method="POST" action="{% url 'account' %}">
+      <form method="POST" action="{% url 'account' %}">
         {% csrf_token %}
         <label for="id_number" style="font-weight: 600">Patient ID number</label>        
         <br />
