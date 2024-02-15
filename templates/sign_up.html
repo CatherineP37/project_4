@@ -51,7 +51,7 @@
   <section class="right">
     <section class="sign_up">
       <h3>Sign up for an account</h3>
-      <form method="POST" method="POST" action="{% url 'account' %}">
+      <form method="POST" action="{% url 'account' %}">
         {% csrf_token %}
         <label for="first_name" style="font-weight: 600">First name</label>
         <br />
