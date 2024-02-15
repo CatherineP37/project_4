@@ -3,57 +3,23 @@
 {% block content %}
 
 <section class="calendar">
-  <h3 style="margin-bottom: 5px">Dr Tracey's availability</h3>
-  <h3>January 2024</h3>
+  <h3 style="margin-bottom: 5px">Dr Tracey's availability for today</h3>
+  <h3>Thursday 15th of February 2024</h3>
   <br />
-  <p style="font-weight: 600; margin-left: 5px">Select a date</p>
-  <table>
-    <thead>
-      <tr>
-        <th>M</th>
-        <th>T</th>
-        <th>W</th>
-        <th>T</th>
-        <th>F</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>9</td>
-        <td>10</td>
-        <td>11</td>
-        <td>12</td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>16</td>
-        <td>17</td>
-        <td>18</td>
-        <td>19</td>
-      </tr>
-      <tr>
-        <td>22</td>
-        <td>23</td>
-        <td>24</td>
-        <td>25</td>
-        <td>26</td>
-      </tr>
-      <tr>
-        <td>29</td>
-        <td>30</td>
-        <td>31</td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <p style="font-weight: 600; margin-left: 5px">Select an appointment</p>
+  <form method="POST" action="{% url 'booking' %}">
+    {% csrf_token %}
+    <option>Patient ID number:</option>
+    <label for="id_number" style="font-weight: 600">Select a time</label> 
+    <option>10:00</option>
+    <option>11:00</option>
+    <option>13:00</option>
+    <option>15:00</option>
+    <option>17:00</option>
+         
+    <br />
+      <input type="submit" id="submit" value="Sign in" />
+  </form> 
+
 </section>
 {% endblock %}
