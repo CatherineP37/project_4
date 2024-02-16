@@ -186,6 +186,10 @@ form {
     margin: 0;
 }
 
+#illustration {
+	background-color: #ffffff;
+}
+
 .illustration {
     display: block;
     margin: 30px auto;
@@ -201,7 +205,7 @@ form {
 /* Title, sign up button and sign in button */
 
 .title_and_buttons, .right {
-	background-color: #97e1be;
+	background-color: #ffffff;
 }
 .buttons {
     background-color: #1b7047;
