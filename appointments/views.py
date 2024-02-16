@@ -26,9 +26,6 @@ def change_password(request):
 def close_account(request):
     return render(request, 'close_account.html', {})
 
-def contact(request):
-    return render(request, 'contact.html', {})
-
 def doctor_1(request):
     return render(request, 'doctor_1.html', {})
 
@@ -43,9 +40,6 @@ def login(request):
 
 def lost_password(request):
     return render(request, 'lost_password.html', {})
-
-def past_appointments(request):
-    return render(request, 'past_appointments.html', {})
 
 def sign_up(request):
     return render(request, 'sign_up.html', {})
