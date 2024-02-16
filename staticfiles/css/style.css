@@ -200,9 +200,9 @@ form {
 
 /* Title, sign up button and sign in button */
 
-.title_and_buttons,
-
-
+.title_and_buttons, .right {
+	background-color: #97e1be;
+}
 .buttons {
     background-color: #1b7047;
     color: #ffffff;
