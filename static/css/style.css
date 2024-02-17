@@ -180,7 +180,7 @@ form {
 /* Illustration */
 
 #illustration {
-    background-color: pink;
+    background-color: #ffffff;
 }
 
 #checkbox {
@@ -203,7 +203,7 @@ form {
 
 .title_and_buttons,
 .right {
-    background-color: blue;
+    background-color: #ffffff;
 }
 
 .buttons {
@@ -228,20 +228,20 @@ form {
 .email_sent,
 .booking,
 .cancellation {
-    background-color: yellow;
+    background-color: #97e1be;
     width: 70%;
     margin: 20px auto;
 }
 
 .appointments {
-    background-color: red;
+    background-color: #97e1be;
     width: 90%;
     margin: 0 auto;
     padding: 10px;
 }
 
 .container {
-    background-color: pink;
+    background-color: #ffffff;
     display: block;
     margin: 100px 0 0 0;
     padding: 50px 0 0 0;
@@ -253,7 +253,7 @@ form {
     width: 90%;
     margin: 0 auto;
     padding: 0;
-    background-color: yellow;
+    background-color: #97e1be;
 }
 
 .doctor {
@@ -272,7 +272,7 @@ form {
 /* Calendar */
 
 .calendar {
-    background-color: yellow;
+    background-color: #97e1be;
     width: 100%;
     height: 300px;
     margin: 150px 0 0 0;
