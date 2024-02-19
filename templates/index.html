@@ -1,3 +1,4 @@
+<!-- 
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -16,26 +17,24 @@
     <title>Appointment Booking App</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-    <!-- Font Awesome script -->
+
     
     <script src="https://kit.fontawesome.com/758be0af3f.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
     <header>
-      <!-- Logo -->
+  
 
       <a href="{% url 'index' %}" class="logo">        
         <h1>BERRY LANE MEDICAL CENTRE</h1>
         <h2>APPOINTMENT BOOKER</h2>
-      </a>
-
-     
+      </a>     
       
     </header>
 
 <div class="main">
-  <!-- Illustration -->  
+  
   
   <section id="illustration">
     <img
@@ -45,11 +44,11 @@
     />
   </section>
   <section class="title_and_buttons">
-    <!-- Sign in button -->
+   
 
     <a href="{% url 'login' %}" class="buttons">Sign in</a>
 
-    <!-- Sign up button -->
+ 
 
     <a href="{% url 'sign_up' %}" class="buttons">Sign up for an account</a>
   </section>
@@ -60,4 +59,51 @@
 
 <script src="{% static 'js/script.js' %}"></script>
 </body>
-</html>
+</html> -->
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cherry Lane Medical Centre appointment booking app.">
+    <meta name="keywords" content="medical centre, doctor, book an appointment online">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Appointment Booking App</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   
+
+    <script src="https://kit.fontawesome.com/758be0af3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <header>
+
+ 
+      <a href="{% url 'index' %}" class="logo">        
+        <h1>BERRY LANE MEDICAL CENTRE</h1>
+        <h2>APPOINTMENT BOOKER</h2>
+      </a>   
+		
+		
+	
+    </header>  
+	<main>
+	   
+
+        <a href="{% url 'login' %}" class="buttons">Sign in</a>
+
+     
+
+        <a href="{% url 'sign_up' %}" class="buttons">Sign up for an account</a>
+	
+	</main>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html> 
+
