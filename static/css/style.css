@@ -1,5 +1,214 @@
-/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;        
+	padding: 0;
+	margin: 0;	
+}
+
+h1, h2, h3 {
+	text-align: center;	
+    font-weight: 600;	
+}
+
+
+h1 {
+	font-size: 2em;
+
+}
+
+/* Header */
+
+
+header {
+    padding: 10px 0; 
+    margin: 0;
+    position: fixed; 
+    background-color: #1b7047;
+    width: 100%; 
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+	top: 0;
+}
+
+/* Logo */
+
+.logo {
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+/* Menu button */
+
+.menu_button {
+	background-color: #1b7047;
+	width: 50px;
+	height: 30px;
+    margin: 0;
+    padding: 0;	
+	}
+	
+i {
+	color: #ffffff;
+	font-size: 20px;
+	}
+	
+/* Menu */
+	
+nav {
+   position: absolute;
+   background-color: #1b7047;
+   width: 100%; 
+   right: 0; 
+   top: 100%; 
+   font-size: 110%; 
+   padding: 0; 
+   margin: 0; 
+   width: 100%; 
+}
+	
+ul {
+	display: none;
+	margin: 0;
+	padding: 0;	
+	}
+	
+ul li {
+	list-style-type: none;
+	margin: 0;    
+    padding-left: 20px;
+    padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;	
+	text-align: left;
+}
+
+ul li:hover {
+	background-color: #0f472c;
+	
+}
+
+ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #ffffff;	
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.active {
+	font-weight: bold;
+}
+	
+.show {
+	display: block;
+}
+
+/* Main section */
+
+main {
+	background-color: #97e1be;
+	width: 90%;
+	margin: 150px auto 0 auto;
+	padding: 150px 0;
+}
+
+main div {
+	background-color: pink;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Buttons */
+
+.buttons {
+	background-color: #1b7047;
+	color: #ffffff;
+	padding: 20px;
+	display: block;
+	margin: 30px auto;
+	width: 80%;
+	border-radius: 10px;
+    font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+
+.buttons:hover {
+	background-color: #0f472c;
+}
+
+
+
+/* Media query: tablets */
+
+@media screen and (min-width: 730px) {
+	main {
+		width: 70%;
+	}
+	
+	main div {	
+	width: 70%;}
+	
+	.buttons {
+		width: 70%;
+	}
+	
+		
+}
+	
+	
+}
+
+/* Media query: narrow desktop */
+
+@media screen and (min-width: 900px) {
+	main {
+		width: 60%;
+	}
+	
+
+
+}
+
+/* Media query: wide desktop */
+
+@media screen and (min-width: 1320px) {
+	
+	main {
+		width: 50%;
+	}
+	
+	main div {	
+	width: 60%;}
+	
+	.buttons {
+		width: 60%;
+	}
+
+
+	
+}
+
+
+
+
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 * {
@@ -29,7 +238,6 @@ h1 {
 
 }
 
-/* Header */
 
 
 header {
@@ -45,7 +253,7 @@ header {
     top: 0;
 }
 
-/* Logo */
+
 
 .logo {
     text-decoration: none;
@@ -54,7 +262,7 @@ header {
     margin: 0 auto;
 }
 
-/* Menu button */
+
 
 .menu_button {
     background-color: #1b7047;
@@ -69,7 +277,7 @@ i {
     font-size: 20px;
 }
 
-/* Menu */
+
 
 nav {
     position: absolute;
@@ -117,7 +325,7 @@ ul li a {
     display: block;
 }
 
-/* Main section */
+
 
 .main {
     margin: 150px 0 0 0;
@@ -131,7 +339,7 @@ ul li a {
     text-decoration: none;
 }
 
-/* Sign up form */
+
 
 .sign_up,
 .contact,
@@ -177,7 +385,7 @@ form {
     background-color: #0f472c;
 }
 
-/* Illustration */
+
 
 #illustration {
     background-color: #ffffff;
@@ -199,7 +407,7 @@ form {
     width: 70%
 }
 
-/* Title, sign up button and sign in button */
+
 
 .title_and_buttons,
 .right {
@@ -269,7 +477,7 @@ form {
     margin: 5px auto;
 }
 
-/* Calendar */
+
 
 .calendar {
     background-color: #97e1be;
@@ -307,7 +515,7 @@ table td:hover {
 
 
 
-/* Media query: tablets */
+
 
 @media screen and (min-width: 730px) {
 
@@ -337,7 +545,7 @@ table td:hover {
 
 }
 
-/* Media query: narrow desktop */
+
 
 @media screen and (min-width: 900px) {
     .main {
@@ -387,7 +595,7 @@ table td:hover {
 
 }
 
-/* Media query: wide desktop */
+
 
 @media screen and (min-width: 1320px) {
 
@@ -416,3 +624,5 @@ table td:hover {
 
 
 }
+*/
+
