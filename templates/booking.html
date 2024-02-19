@@ -1,3 +1,4 @@
+<!--
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
@@ -26,4 +27,24 @@
     </div>
   </section>
 </div>
+{% endblock %}
+-->
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<main>
+  <div>
+    <p>
+      Thanks, you have successfully booked an appointment with Dr Tracey at
+      15:00 on 11.01.2024
+    </p>    
+    </br>
+    <p>Can't make it?</p>      
+    </div>   
+  <a href="{% url 'cancellation' %}" class="buttons">Cancel appointment</a>
+ 
+</main>
+
 {% endblock %}
