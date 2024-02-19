@@ -153,6 +153,35 @@ main div {
 	background-color: #0f472c;
 }
 
+.container {
+    background-color: #ffffff;
+    display: block;
+    margin: 100px 0 0 0;
+    padding: 50px 0 0 0;
+    width: 100%;
+
+}
+
+.doctors {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #97e1be;
+}
+
+.doctor {
+    background-color: #97e1be;
+    margin: 20px 0 0 0;
+    padding: 10px 5px 5px 5px;
+
+}
+
+.doctor img {
+    width: 70%;
+    display: block;
+    margin: 5px auto;
+}
+
 
 
 /* Media query: tablets */
@@ -168,12 +197,26 @@ main div {
 	.buttons {
 		width: 70%;
 	}
-	
+
+    .doctors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .doctor {
+        margin: 20px;
+    }
+
 		
 }
 	
 	
-}
+
 
 /* Media query: narrow desktop */
 
@@ -181,7 +224,21 @@ main div {
 	main {
 		width: 60%;
 	}
-	
+
+    .container {
+
+        width: 80%;
+        margin: 100px auto;
+
+    }
+	 .doctors {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+   
+
 
 
 }
