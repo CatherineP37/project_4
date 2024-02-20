@@ -1,108 +1,14 @@
 {% extends "base.html" %}
-<!-- 
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Cherry Lane Medical Centre appointment booking app."
-    />
-    <meta
-      name="keywords"
-      content="medical centre, doctor, book an appointment online"
-    />
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <title>Appointment Booking App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+{% block content %}
 
 
-    
-    <script src="https://kit.fontawesome.com/758be0af3f.js" crossorigin="anonymous"></script>
-  </head>
-
-  <body>
-    <header>
-  
-
-      <a href="{% url 'index' %}" class="logo">        
-        <h1>BERRY LANE MEDICAL CENTRE</h1>
-        <h2>APPOINTMENT BOOKER</h2>
-      </a>     
-      
-    </header>
-
-<div class="main">
-  
-  
-  <section id="illustration">
-    <img
-      src="{% static 'images/illustration.webp' %}"
-      alt="Illustration of a calendar."
-      class="illustration"
-    />
-  </section>
-  <section class="title_and_buttons">
-   
-
-    <a href="{% url 'login' %}" class="buttons">Sign in</a>
-
- 
-
-    <a href="{% url 'sign_up' %}" class="buttons">Sign up for an account</a>
-  </section>
-</div>
-
-</body>
-</html>
-
-<script src="{% static 'js/script.js' %}"></script>
-</body>
-</html> -->
-
- {% block content %}
-
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cherry Lane Medical Centre appointment booking app.">
-    <meta name="keywords" content="medical centre, doctor, book an appointment online">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    <title>Appointment Booking App</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-   
-
-    <script src="https://kit.fontawesome.com/758be0af3f.js" crossorigin="anonymous"></script>
-</head>
-<body>
- <header>
-
- 
-      <a href="{% url 'index' %}" class="logo">        
-        <h1>BERRY LANE MEDICAL CENTRE</h1>
-        <h2>APPOINTMENT BOOKER</h2>
-      </a>   
-		
-		
-	
-    </header>  
 	<main>
 	   
 
 	
 	</main>
-<script src="{% static 'js/script.js' %}"></script>
 
-</body>
-
-</html> 
 
 
 {% endblock %}
