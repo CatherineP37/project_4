@@ -42,5 +42,121 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
   <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
 </form>
+<!--
+{% load static %}
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cherry Lane Medical Centre appointment booking app."
+    />
+    <meta
+      name="keywords"
+      content="medical centre, doctor, book an appointment online"
+    />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Appointment Booking App</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+   
+    
+    <script src="https://kit.fontawesome.com/758be0af3f.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+     
+
+      <a href="{% url 'index' %}" class="logo"> 
+        <h1>BERRY LANE MEDICAL CENTRE</h1>
+        <h2>APPOINTMENT BOOKER</h2>
+      </a>
+    </header>
+
+<div class="main">
+  <section id="illustration">
+    <img
+      src="{% static 'images/illustration.webp' %}"
+      alt="Image of a calendar."
+      class="illustration_2"
+    />
+  </section>
+
+  
+  <section class="right">
+    <section class="sign_up">
+      <h3 style="margin: 10px">Sign in</h3>
+      <form method="POST" action="{% url 'account' %}">
+        {% csrf_token %}
+        <label for="id_number" style="font-weight: 600">Patient ID number</label>        
+        <br />
+        <input
+          type="text"
+          name="id_number"
+          id="id_number"
+          style="margin-bottom: 3px"
+          required
+        />
+        <label for="checkbox">Remember patient ID number</label>
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <br />
+        <br />
+        <label for="password" style="font-weight: 600">Password</label>
+        <br />
+        <input type="password" name="password" id="password" />
+        <br />
+        <input type="submit" id="submit" value="Sign in" />
+      </form> 
+ 
+      <script src="{% static 'js/script.js' %}"></script>
+     
+    </body>
+  </html>
+
+-->
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cherry Lane Medical Centre appointment booking app.">
+    <meta name="keywords" content="medical centre, doctor, book an appointment online">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Appointment Booking App</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   
+
+    <script src="https://kit.fontawesome.com/758be0af3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <header>
+
+ 
+      <a href="{% url 'index' %}" class="logo">        
+        <h1>BERRY LANE MEDICAL CENTRE</h1>
+        <h2>APPOINTMENT BOOKER</h2>
+      </a>   
+		
+		
+	
+    </header>  
+	<main>
+	   
+
+        
+	
+	</main>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html> 
 {% endblock content %}
