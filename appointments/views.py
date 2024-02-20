@@ -35,14 +35,10 @@ def doctors(request):
 def email_sent(request):
     return render(request, 'email_sent.html', {})
 
-def login(request):
-    return render(request, 'login.html', {})
-
 def lost_password(request):
     return render(request, 'lost_password.html', {})
 
-def sign_up(request):
-    return render(request, 'sign_up.html', {})
+
 
 
 
