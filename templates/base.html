@@ -58,12 +58,8 @@
           <li>
             <a href="{% url 'close_account' %}">Close account</a>
           </li>
-          <li>
-            <a href="{% url 'change_password' %}">Change password</a>
-          </li>                 
-          <li>
-            <a href="{% url 'index' %}">Sign out</a>
-          </li>
+                        
+          
           
     {% if user.is_authenticated %}
     <li class="nav-item">
