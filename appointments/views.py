@@ -20,9 +20,6 @@ def booking(request):
 def cancellation(request):
     return render(request, 'cancellation.html', {})
 
-def change_password(request):
-    return render(request, 'change_password.html', {})
-
 def close_account(request):
     return render(request, 'close_account.html', {})
 
@@ -35,8 +32,7 @@ def doctors(request):
 def email_sent(request):
     return render(request, 'email_sent.html', {})
 
-def lost_password(request):
-    return render(request, 'lost_password.html', {})
+
 
 
 
