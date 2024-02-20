@@ -11,9 +11,7 @@ urlpatterns = [
     path('close_account.html', views.close_account, name="close_account"),    
     path('doctor_1.html', views.doctor_1, name="doctor_1"),
     path('doctors.html', views.doctors, name="doctors"),
-    path('email_sent.html', views.email_sent, name="email_sent"),
-    path('login.html', views.login, name="login"),   
-    path('sign_up.html', views.sign_up, name="sign_up"),
+    path('email_sent.html', views.email_sent, name="email_sent"), 
 
 
 ]
