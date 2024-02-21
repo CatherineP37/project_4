@@ -157,9 +157,9 @@ main div {
 
 form {
     background-color: blue;
-	width: 90%;
+	width: 300px;
 	margin: 20px auto;
-	padding: 20px 100px;
+	padding: 20px;
 }
 
 form input {
