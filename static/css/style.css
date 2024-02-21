@@ -161,6 +161,10 @@ form {
 	margin: 20px auto;
 	padding: 20px 0 0 0;
 }
+
+form input {
+    padding: 10px;
+}
 	
 
 /* Doctor section */
