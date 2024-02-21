@@ -245,15 +245,13 @@ form input {
 	}
 
     .container {
-
         width: 80%;
         margin: 100px auto;
-
     }
+
 	 .doctors {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-
     }
 
    
