@@ -153,6 +153,16 @@ main div {
 	background-color: #0f472c;
 }
 
+/* Forms */
+
+form {
+	background-color: #97e1be;
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px 0 0 0;
+}
+	
+
 /* Doctor section */
 
 .container {
