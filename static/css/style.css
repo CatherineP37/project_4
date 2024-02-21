@@ -164,6 +164,8 @@ form {
 
 form input {
     margin: 10px;
+    width: 70%;
+    padding: 3px;
 }
 	
 
