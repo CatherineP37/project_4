@@ -124,6 +124,7 @@ main {
 	width: 90%;
 	margin: 150px auto 0 auto;
 	padding: 150px 0;
+    height: auto;
 }
 
 main div {
