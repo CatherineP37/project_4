@@ -15,7 +15,7 @@
           
    
     
-            <form method="POST" action="{% url 'account_login' %}">
+            <form method="POST" action="{% url 'account' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
