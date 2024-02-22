@@ -11,11 +11,7 @@
 <main>
         
             <h3>{% trans "Sign In" %}</h3>
-
-          
-   
-    
-            <form method="POST" action="{% url 'account' %}">
+            <form method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}

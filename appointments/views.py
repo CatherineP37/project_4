@@ -9,6 +9,7 @@ def index(request):
     return render(request, 'index.html', {})
 
 def account(request):
+    print(request.user.is_authenticated)
     return render(request, 'account.html', {})
 
 def appointments(request):
