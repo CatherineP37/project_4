@@ -12,6 +12,10 @@ body {
     font-family: 'Inter', sans-serif;        
 	padding: 0;
 	margin: 0;	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 h1, h2, h3 {
@@ -121,10 +125,13 @@ ul li a {
 
 main {
 	background-color: orange;
-	width: 90%;
-	margin: 150px auto 0 auto;
-	padding: 150px 0;
-    height: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	
 }
 
 main div {
