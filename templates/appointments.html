@@ -1,21 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div class="main">
-
-    <!-- Illustration -->
-    <section id="illustration">
-        <img src="{% static 'images/illustration.webp' %}" alt="Illustration of a calendar." class="illustration">
-    </section>
-    <section class="right">
-        <section class="appointments">
+<main>
             <h3 style="margin: 0 0 15px 0">Upcoming appointments</h3>
             <p>You have no upcoming appointments.</p>
             <a href="{% url 'booking' %}" class="buttons">Book an appointment</a>
             <a href="{% url 'cancellation' %}" class="buttons">Cancel appointment</a>
             
-            <section>
+</main>
 
-            </section>
-</div>
 {% endblock %}
