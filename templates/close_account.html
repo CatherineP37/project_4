@@ -2,23 +2,13 @@
 {% load static %}
 {% block content %}
 
-<div class="main">
-  <!-- Illustration -->
-  <section id="illustration">
-    <img
-      src="{% static 'images/illustration.webp' %}"
-      alt="Illustration of a calendar."
-      class="illustration"
-    />
-  </section>
-  <section class="right">
-    <div class="cancellation">
+<main>
+    <div>
       <h2>Close account</h2>
       <p>Are you sure you want to close your account?</p>
 
-      <a>Close account</a>
+      <a class="buttons">Close account</a>
+   
     </div>
-  </section>
-</div>
-
+</main>
 {% endblock %}
