@@ -1,20 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<div class="main">
-  <section id="illustration">
-    <img
-      src="{% static 'images/illustration.webp' %}"
-      alt="Image of a calendar."
-      class="illustration_2"
-    />
-  </section>
-
-  <!-- Lost password form  -->
-  <section class="right">
-    <div class="cancellation">
-      <h3 style="margin-bottom: 10px">Cancellation</h3>
-      <p style="font-weight: 600">
+<main>
+  <div>  
+      <h3>Cancellation</h3>
+      <p>
         You have cancelled the following appointment:
       </p>
       <br />
@@ -23,6 +13,5 @@
       <p>Time: 11:00</p>
       <a href="{% url 'doctors' %}" class="buttons" style="margin-left: 0">Book new appointment</a>   
     </div>
-  </section>
-</div>
+</main>
 {% endblock %}
