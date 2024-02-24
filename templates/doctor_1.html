@@ -9,7 +9,8 @@
   <h3>Thursday 15th of February 2024</h3>
   <br />
   {% for item in available_appointments %}
-      <p>{{ item }}</p>
+      <p>{{ item.time }}</p>
+      <p>{{ item.date }}</p>
   {% endfor %}
   <p>Select an appointment</p>
   <form method="POST" action="{% url 'booking' %}">
