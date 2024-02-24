@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here
 
 
-class Patients(models.Model):
+class Patient(models.Model):
     patient_id_number = models.IntegerField()
     first_name = models.CharField()
     last_name = models.CharField()
@@ -13,7 +13,7 @@ class Patients(models.Model):
     phone_number = models.IntegerField()
 
 
-class Appointments(models.Model):
+class Appointment(models.Model):
     appointment_id = models.IntegerField()
     patient_id_number = models.OneToOneField(
     Patients, on_delete=models.CASCADE)
