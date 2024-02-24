@@ -25,8 +25,15 @@ def close_account(request):
     return render(request, 'close_account.html', {})
 
 def doctor_1(request):
+    if request.method == "POST":        
+        form = BookAppointment(request.POST or None)
+        if form.is_valid():
+            form.save()
+        return render(request, 'doctor_1.html', {})
+    else: 
+        return render(request, 'doctor_1.html', {})
     available_appointments = Doctor_1_availability.objects.all
-    return render(request, 'doctor_1.html', {'available_appointments':available_appointments})
+    return render(request, 'doctor_1.html', {'available_appointments':available_appointments}, {'form' : form})
 
 def doctors(request):
     return render(request, 'doctors.html', {})

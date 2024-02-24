@@ -10,8 +10,10 @@
       <p>{{ item.date }}</p>
   {% endfor %}
   <p>Select an appointment</p>
+  
   <form method="POST" action="{% url 'booking' %}">
     {% csrf_token %} 
+    {{form}}
     <input type="submit" id="submit" class="buttons" value="Book appointment" />
   </form> 
 </div>
