@@ -22,8 +22,7 @@ class Appointment(models.Model):
     time = models.TimeField()
 
 
-class Doctor_1_availability(models.Model):
-    appointment_id = models.IntegerField()
+class Doctor_1_availability(models.Model):    
     date = models.DateField()
     time = models.TimeField()
 
