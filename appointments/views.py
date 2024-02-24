@@ -25,7 +25,8 @@ def close_account(request):
     return render(request, 'close_account.html', {})
 
 def doctor_1(request):
-    return render(request, 'doctor_1.html', {})
+    available_appointments = doctor_1_availability.objects.all
+    return render(request, 'doctor_1.html', {'all':available_appointments})
 
 def doctors(request):
     return render(request, 'doctors.html', {})
