@@ -2,11 +2,12 @@
 {% load static %}
 {% block content %}
 
-<section class="calendar">
-  <h3 style="margin-bottom: 5px">Dr Tracey's availability for today</h3>
+<main>
+<div>
+  <h3>Dr Tracey's availability for today</h3>
   <h3>Thursday 15th of February 2024</h3>
   <br />
-  <p style="font-weight: 600; margin-left: 5px">Select an appointment</p>
+  <p>Select an appointment</p>
   <form method="POST" action="{% url 'booking' %}">
     {% csrf_token %}
     <option>Patient ID number:</option>
@@ -15,11 +16,11 @@
     <option>11:00</option>
     <option>13:00</option>
     <option>15:00</option>
-    <option>17:00</option>
-         
+    <option>17:00</option>         
     <br />
-      <input type="submit" id="submit" value="Sign in" />
+    <input type="submit" id="submit" value="Sign in" />
   </form> 
-
+</div>
+</main>
 </section>
 {% endblock %}

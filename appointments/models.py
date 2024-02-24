@@ -16,7 +16,7 @@ class Patients(models.Model):
 class Appointments(models.Model):
     appointment_id = models.IntegerField()
     patient_id_number = models.OneToOneField(
-        Patients, on_delete=models.CASCADE)
+    Patients, on_delete=models.CASCADE)
     doctor_id_number = models.IntegerField()
     date = models.DateField()
     time = models.TimeField()
