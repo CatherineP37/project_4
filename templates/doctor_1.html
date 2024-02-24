@@ -4,24 +4,14 @@
 
 <main>
 <div>
-  <h3>Dr Tracey's availabile appointments</h3> 
-  <h3>Thursday 15th of February 2024</h3>
-  <br />
+  <h3>Dr Tracey's available appointments</h3> 
   {% for item in available_appointments %}
       <p>{{ item.time }}</p>
       <p>{{ item.date }}</p>
   {% endfor %}
   <p>Select an appointment</p>
   <form method="POST" action="{% url 'booking' %}">
-    {% csrf_token %}
-    <option>Patient ID number:</option>
-    <label for="id_number" style="font-weight: 600">Select a time</label> 
-    <option>10:00</option>
-    <option>11:00</option>
-    <option>13:00</option>
-    <option>15:00</option>
-    <option>17:00</option>         
-    <br />
+    {% csrf_token %} 
     <input type="submit" id="submit" class="buttons" value="Book appointment" />
   </form> 
 </div>
