@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Doctor_1_availability
 from django.http import HttpResponse
+from .forms import BookAppointment
 
 # Create your views here.
 
@@ -36,7 +37,8 @@ def doctor_1(request):
         return render(request, 'doctor_1.html', {})
 
 def doctors(request):
-    return render(request, 'doctors.html', {})
+    form = BookAppointment
+    return render(request, 'doctors.html', {'form':form})
 
 def email_sent(request):
     return render(request, 'email_sent.html', {})
