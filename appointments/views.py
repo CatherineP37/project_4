@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Doctor_1_availability
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from .forms import BookAppointment
 
 # Create your views here.
@@ -28,17 +29,20 @@ def close_account(request):
 def doctor_1(request):   
     available_appointments = Doctor_1_availability.objects.all
     return render(request, 'doctor_1.html', {'available_appointments':available_appointments},)
-    if request.method == "POST":        
-        form = BookAppointment(request.POST or None)
-        if form.is_valid():
-            form.save()
-        return render(request, 'doctor_1.html', {})
-    else: 
-        return render(request, 'doctor_1.html', {})
+ 
 
 def doctors(request):
-    form = BookAppointment
-    return render(request, 'doctors.html', {'form':form})
+    submitted = False
+    if request.method == "POST":
+        form = BookAppointment(request.POST)
+        if form.is_valid():
+            form.save()
+            return HttpResponseRedirect('/doctors?submitted=True')
+    else:
+        form = BookAppointment
+        if 'submitted' in request.GET:
+            submitted = True
+    return render(request, 'doctors.html', {'form':form 'submitted':submitted})
 
 def email_sent(request):
     return render(request, 'email_sent.html', {})
