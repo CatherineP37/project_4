@@ -129,14 +129,17 @@ main {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-	
+    align-items: center;	
 }
 
 main div {
 	background-color: pink;
 	width: 90%;
 	margin: 0 auto;
+}
+
+main div p {
+    text-align: left;
 }
 
 /* Buttons */
