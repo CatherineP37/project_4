@@ -42,7 +42,7 @@ def doctors(request):
         form = BookAppointment
         if 'submitted' in request.GET:
             submitted = True
-    return render(request, 'doctors.html', {'form':form 'submitted':submitted})
+    return render(request, 'doctors.html', {'form':form, 'submitted':submitted})
 
 def email_sent(request):
     return render(request, 'email_sent.html', {})
