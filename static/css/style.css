@@ -125,8 +125,7 @@ ul li a {
 
 main {
 	background-color: #97e1be;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 20px;    
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -136,7 +135,7 @@ main {
 
 main div {
 	background-color: pink;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -218,8 +217,6 @@ form input {
 		width: 70%;
 	}
 	
-	main div {	
-	width: 90%;}
 	
 	.buttons {
 		width: 70%;
