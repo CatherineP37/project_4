@@ -36,11 +36,17 @@
      
     </section>
   </div>
-  <form method="POST" action="">
+  {% if submitted %}
+      You have booked an appointment.
+  {% else %}
+
+  
+  <form action="" method="POST">
     {% csrf_token %} 
     {{ form.as_p }}
     <input type="submit" id="submit" class="buttons" value="Book appointment" />
   </form>
+  {% endif %}
 </main>
 
 {% endblock %}
