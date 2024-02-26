@@ -106,7 +106,8 @@ DATABASES = {
 
 CSRF_TRUSTED_ORIGINS = [
     "https://8000-catherinep37-project4-co6ggzp2rim.ws-eu108.gitpod.io",
-    "https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/"
+    "https://8000-catherinep37-project4-eeoyioqy76v.ws-eu108.gitpod.io",
+    "https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/",
 ]
 
 # Password validation
