@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 ALLOWED_HOSTS = [
-    '8000-catherinep37-project-4-m4w951cu2q.us2.codeanyapp.com',
+    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu108.gitpod.io',
     'doctor-appointment-booker-567ff6ab7202.herokuapp.com',
     '8000-catherinep37-project4-co6ggzp2rim.ws-eu108.gitpod.io',
     '8000-catherinep37-project4-eeoyioqy76v.ws-eu108.gitpod.io',
@@ -109,7 +109,7 @@ DATABASES = {
 }
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-catherinep37-project4-co6ggzp2rim.ws-eu108.gitpod.io",
+    "https://8000-catherinep37-project4-wo3lj7io8j1.ws-eu108.gitpod.io",
     "https://8000-catherinep37-project4-eeoyioqy76v.ws-eu108.gitpod.io",
     "https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/",
 ]
