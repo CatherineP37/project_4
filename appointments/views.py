@@ -29,20 +29,22 @@ def close_account(request):
 def doctor_1(request):   
     available_appointments = Doctor_1_availability.objects.all
     return render(request, 'doctor_1.html', {'available_appointments':available_appointments},)
- 
-
-def doctors(request):
     submitted = False
     if request.method == "POST":
         form = BookAppointment(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/doctors?submitted=True')
+            return HttpResponseRedirect('/doctor_1?submitted=True')
     else:
         form = BookAppointment
         if 'submitted' in request.GET:
             submitted = True
-    return render(request, 'doctors.html', {'form':form, 'submitted':submitted})
+    return render(request, 'doctor_1.html', {'form':form, 'submitted':submitted})
+ 
+
+def doctors(request):
+    
+    return render(request, 'doctors.html', {})
 
 def email_sent(request):
     return render(request, 'email_sent.html', {})
