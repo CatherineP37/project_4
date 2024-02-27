@@ -4,12 +4,16 @@
 
 <main>
 <div>
-  <h3>Dr Tracey's available appointments</h3> 
+  <h3>Dr Tracey's available appointments</h3>
+  <table> 
+  <tr><th>Date</th><th>Time</th></tr>
   {% for item in available_appointments %}
-      <p>{{ item.time }}</p>
-      <p>{{ item.date }}</p>
+      <tr>
+        <td>{{ item.date }}</td>
+        <td>{{ item.time }}</td>
+      </tr>      
   {% endfor %}
-  <p>Select an appointment</p>
+  </table>
   
    
 </div>
