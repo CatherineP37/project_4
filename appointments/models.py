@@ -4,22 +4,11 @@ from django.contrib.auth.models import User
 # Create your models here
 
 
-class Patient(models.Model):
-    patient_id_number = models.IntegerField()
+class Booked_appointments(models.Model):   
     first_name = models.CharField()
     last_name = models.CharField()
-    email_address = models.EmailField()
-    postal_address = models.CharField()
+    email_address = models.EmailField()  
     phone_number = models.IntegerField()
-
-
-class Appointment(models.Model):
-    appointment_id = models.IntegerField()
-    patient_id_number = models.OneToOneField(
-    Patient, on_delete=models.CASCADE)    
-    date = models.DateField()
-    time = models.TimeField()
-
 
 class Availability(models.Model):    
     date = models.DateField()
