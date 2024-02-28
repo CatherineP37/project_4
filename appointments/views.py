@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views import generic
-from .models import Doctor_1_availability
+from .models import Availability
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .forms import BookAppointment
@@ -26,9 +26,9 @@ def cancellation(request):
 def close_account(request):
     return render(request, 'close_account.html', {})
 
-def doctor_1(request):   
+def booking(request):   
     available_appointments = Doctor_1_availability.objects.all
-    return render(request, 'doctor_1.html', {'available_appointments':available_appointments},)
+    return render(request, 'booking.html, {'available_appointments':available_appointments},)
     submitted = False
     if request.method == "POST":
         form = BookAppointment(request.POST)
@@ -39,12 +39,9 @@ def doctor_1(request):
         form = BookAppointment
         if 'submitted' in request.GET:
             submitted = True
-    return render(request, 'doctor_1.html', {'form':form, 'submitted':submitted})
+    return render(request, 'booking.html', {'form':form, 'submitted':submitted})
  
 
-def doctors(request):
-    
-    return render(request, 'doctors.html', {})
 
 def email_sent(request):
     return render(request, 'email_sent.html', {})
