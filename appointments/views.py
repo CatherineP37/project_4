@@ -40,8 +40,7 @@ def booking(request):
  
 
 
-def email_sent(request):
-    return render(request, 'email_sent.html', {})
+
 
 
 
