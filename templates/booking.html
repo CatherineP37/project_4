@@ -1,17 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<main>
-  <div>
-    <p>
-      Thanks, you have successfully booked an appointment with Dr Tracey at
-      15:00 on 11.01.2024
-    </p>    
-    </br>
-    <p>Can't make it?</p>      
-    </div>   
-  <a href="{% url 'cancellation' %}" class="buttons">Cancel appointment</a>
- 
-</main>
 
+<main>
+<div>
+  <h3>Dr Tracey's available appointments</h3>
+  <table> 
+  <tr><th>Date</th><th>Time</th></tr>
+  {% for item in available_appointments %}
+      <tr>
+        <td>{{ item.date }}</td>
+        <td>{{ item.time }}</td>
+      </tr>      
+  {% endfor %}
+  </table>
+  
+   
+</div>
+<form action="" method="POST">
+  {% csrf_token %} 
+  {{ form.as_p }}
+  <input type="submit" id="submit" class="buttons" value="Book appointment" />
+</form>
+</main>
+</section>
 {% endblock %}
