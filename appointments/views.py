@@ -25,7 +25,7 @@ def close_account(request):
 
 def booking(request):   
     available_appointments = Availability.objects.all
-    return render(request, 'booking.html, {'available_appointments':available_appointments},)
+    return render(request, 'booking.html, {'availability':Availability},)
     submitted = False
     if request.method == "POST":
         form = BookAppointment(request.POST)
