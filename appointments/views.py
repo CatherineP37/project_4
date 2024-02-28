@@ -17,9 +17,6 @@ def account(request):
 def appointments(request):
     return render(request, 'appointments.html', {})
 
-def booking(request):
-    return render(request, 'booking.html', {})
-
 def cancellation(request):
     return render(request, 'cancellation.html', {})
 
@@ -27,14 +24,14 @@ def close_account(request):
     return render(request, 'close_account.html', {})
 
 def booking(request):   
-    available_appointments = Doctor_1_availability.objects.all
+    available_appointments = Availability.objects.all
     return render(request, 'booking.html, {'available_appointments':available_appointments},)
     submitted = False
     if request.method == "POST":
         form = BookAppointment(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/doctor_1?submitted=True')
+            return HttpResponseRedirect('/booking?submitted=True')
     else:
         form = BookAppointment
         if 'submitted' in request.GET:
