@@ -7,10 +7,6 @@ urlpatterns = [
     path('appointments/',views.appointments, name="appointments"),
     path('booking/', views.booking, name="booking"),
     path('cancellation/', views.cancellation, name="cancellation"),   
-    path('close_account/', views.close_account, name="close_account"),    
-    path('doctor_1/', views.doctor_1, name="doctor_1"),
-    path('doctors/', views.doctors, name="doctors"),
-    path('email_sent/', views.email_sent, name="email_sent"), 
-
-
+    path('close_account/', views.close_account, name="close_account"),  
+    path('email_sent/', views.email_sent, name="email_sent"),
 ]
