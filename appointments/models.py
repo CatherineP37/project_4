@@ -22,36 +22,8 @@ class Appointment(models.Model):
     time = models.TimeField()
 
 
-class Doctor_1_availability(models.Model):    
+class Availability(models.Model):    
     date = models.DateField()
     time = models.TimeField()
 
 
-class Doctor_2_availability(models.Model):
-    appointment_id = models.IntegerField()
-    date = models.DateField()
-    time = models.TimeField()
-
-
-class Doctor_3_availability(models.Model):
-    appointment_id = models.IntegerField()
-    date = models.DateField()
-    time = models.TimeField()
-
-
-class Doctor_4_availability(models.Model):
-    appointment_id = models.IntegerField()
-    date = models.DateField()
-    time = models.TimeField()
-
-
-class Doctor_5_availability(models.Model):
-    appointment_id = models.IntegerField()
-    date = models.DateField()
-    time = models.TimeField()
-
-
-class Doctor_6_availability(models.Model):
-    appointment_id = models.IntegerField()
-    date = models.DateField()
-    time = models.TimeField()
