@@ -23,20 +23,20 @@ def cancellation(request):
 def close_account(request):
     return render(request, 'close_account.html', {})
 
-def booking(request):   
-    available_appointments = Availability.objects.all
-    return render(request, 'booking.html, {'availability':Availability},)
-    submitted = False
-    if request.method == "POST":
-        form = BookAppointment(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect('/booking?submitted=True')
-    else:
-        form = BookAppointment
-        if 'submitted' in request.GET:
-            submitted = True
-    return render(request, 'booking.html', {'form':form, 'submitted':submitted})
+# def booking(request):   
+   # available_appointments = Availability.objects.all()
+   # return render(request, 'booking.html, {'availability':Availability},)
+   # submitted = False
+   # if request.method == "POST":
+       # form = BookAppointment(request.POST)
+       # if form.is_valid():
+           # form.save()
+           # return HttpResponseRedirect('/booking?submitted=True')
+   # else:
+       # form = BookAppointment
+       # if 'submitted' in request.GET:
+          #  submitted = True
+   # return render(request, 'booking.html', {'form':form, 'submitted':submitted})
  
 
 
