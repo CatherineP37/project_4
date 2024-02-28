@@ -8,5 +8,5 @@ urlpatterns = [
     path('booking/', views.booking, name="booking"),
     path('cancellation/', views.cancellation, name="cancellation"),   
     path('close_account/', views.close_account, name="close_account"),  
-    path('email_sent/', views.email_sent, name="email_sent"),
+    path('email_sent/', views.email_sent, name="email_sent"),   
 ]
