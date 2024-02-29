@@ -10,15 +10,22 @@
     {% csrf_token %} 
       <tr><th>Date</th><th>Time</th><th></th></tr>
       <tr>
-      {% for field in form %}
-      <td>{{ field }}</td>
-      {% endfor %}
-  </tr>
+      <label for="first_name">First name:</label>
+      <input type="text" name="first_name" id="first_name">{{ form.first_name }}</input>
+      <label for="last_name">Last name:</label>
+      <input type="text" name="last_name" id="last_name">{{ form.last_name }}</input>
+      <label for="email">Email address:</label>
+      <input type="email" name="email" id="email">{{ form.email_address }}</input>
+      <label for="phone">Phone number:</label>
+      <input type="tel" name="phone" id="phone">{{ form.phone_number }}</input>
+            
+      
+      </tr>
   {% for item in availability %}
       <tr>
         <td>{{ item.date }}</td>
         <td>{{ item.time }}</td>
-        <td><button name="save" class="buttons">Select</button></td>
+        <td><input type="submit" name="save" class="buttons">Select</input></td>
       </tr>      
   {% endfor %}
   </form>
