@@ -23,6 +23,10 @@ def cancellation(request):
 def close_account(request):
     return render(request, 'close_account.html', {})
 
+def booking(request):
+    context = {}
+    return render(request, 'booking.html', context)
+
 # def booking(request):   
    # available_appointments = Availability.objects.all()
    # return render(request, 'booking.html, {'availability':Availability},)
