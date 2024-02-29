@@ -25,6 +25,8 @@ def close_account(request):
 
 def booking(request):
     context = {}
+    availability = Availability.objects.all()
+    context['availability'] = availability
     return render(request, 'booking.html', context)
 
 # def booking(request):   
