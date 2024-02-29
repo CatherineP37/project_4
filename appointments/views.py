@@ -28,6 +28,11 @@ def booking(request):
     form = BookAppointment()
     availability = Availability.objects.all()
     context['availability'] = availability
+    if request.method =='POST':
+        if 'save' in request.POST:
+            form = BookAppointment(request.POST)
+            form.save()
+
     context['form'] = form
     return render(request, 'booking.html', context)
 

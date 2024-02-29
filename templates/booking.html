@@ -6,28 +6,27 @@
 <div>
   <h3>Dr Tracey's available appointments</h3>
   <table> 
-  <tr><th>Date</th><th>Time</th><th></th></tr>
-  <tr>
-  {% for field in form %}
-    <td>{{ field }}</td>
-  {% endfor %}
+    <form method="POST" action="{% url 'booking' %}" >
+    {% csrf_token %} 
+      <tr><th>Date</th><th>Time</th><th></th></tr>
+      <tr>
+      {% for field in form %}
+      <td>{{ field }}</td>
+      {% endfor %}
   </tr>
   {% for item in availability %}
       <tr>
         <td>{{ item.date }}</td>
         <td>{{ item.time }}</td>
-        <td><button name="select" class="buttons">Select</button></td>
+        <td><button name="save" class="buttons">Select</button></td>
       </tr>      
   {% endfor %}
+  </form>
   </table>
   
    
 </div>
-<form action="" method="POST">
-  {% csrf_token %} 
-  {{ form.as_p }}
-  <input type="submit" id="submit" class="buttons" value="Book appointment" />
-</form>
+
 </main>
 </section>
 {% endblock %}
