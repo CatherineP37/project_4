@@ -6,11 +6,17 @@
 <div>
   <h3>Dr Tracey's available appointments</h3>
   <table> 
-  <tr><th>Date</th><th>Time</th></tr>
+  <tr><th>Date</th><th>Time</th><th></th></tr>
+  <tr>
+  {% for field in form %}
+    <td>{{ field }}</td>
+  {% endfor %}
+  </tr>
   {% for item in availability %}
       <tr>
         <td>{{ item.date }}</td>
         <td>{{ item.time }}</td>
+        <td><button name="select" class="buttons">Select</button></td>
       </tr>      
   {% endfor %}
   </table>
