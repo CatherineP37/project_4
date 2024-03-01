@@ -8,7 +8,7 @@
  
     <form method="POST" action="{% url 'booking' %}" >
     {% csrf_token %}       
-     <!--<label for="first_name">First name:</label>
+      <label for="first_name">First name:</label>
       <input type="text" name="first_name" id="first_name">{{ form.first_name }}</input>
       <label for="last_name">Last name:</label>
       <input type="text" name="last_name" id="last_name">{{ form.last_name }}</input> 
@@ -16,7 +16,7 @@
       <input type="email" name="email" id="email">{{ form.email_address }}</input> 
       <label for="phone">Phone number:</label>
       <input type="tel" name="phone" id="phone">{{ form.phone_number }}</input> 
-      --> 
+      
             
       <p>Choose a date and time</p>
      
