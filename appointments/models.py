@@ -9,6 +9,8 @@ class Booked_appointments(models.Model):
     last_name = models.CharField()
     email_address = models.EmailField()  
     phone_number = models.IntegerField()
+    date = models.DateField()
+    time = models.TimeField()
 
 class Availability(models.Model):    
     date = models.DateField()
