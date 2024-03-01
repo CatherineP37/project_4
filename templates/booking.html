@@ -5,11 +5,9 @@
 <main>
 <div>
   <h3>Dr Tracey's available appointments</h3>
-  <table> 
+ 
     <form method="POST" action="{% url 'booking' %}" >
-    {% csrf_token %} 
-      <tr><th>Date</th><th>Time</th><th></th></tr>
-      <tr>
+    {% csrf_token %}       
       <label for="first_name">First name:</label>
       <input type="text" name="first_name" id="first_name">{{ form.first_name }}</input>
       <label for="last_name">Last name:</label>
@@ -20,16 +18,16 @@
       <input type="tel" name="phone" id="phone">{{ form.phone_number }}</input>
             
       
-      </tr>
+     
   {% for item in availability %}
-      <tr>
-        <td>{{ item.date }}</td>
-        <td>{{ item.time }}</td>
-        <td><input type="submit" name="save" class="buttons">Select</input></td>
-      </tr>      
+      
+        {{ item.date }}
+        {{ item.time }}
+        <input type="submit" name="save" class="buttons">Select</input>
+         
   {% endfor %}
   </form>
-  </table>
+
   
    
 </div>
