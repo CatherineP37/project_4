@@ -6,7 +6,7 @@
 <div>
   <h3>Dr Tracey's available appointments</h3>
  
-    <form method="POST" action="{% url 'booking' %}" >
+    <form method="POST" action="" >
     {% csrf_token %}       
       <label for="first_name">First name:</label>
       <input type="text" name="first_name" id="first_name">{{ form.first_name }}</input>
