@@ -27,6 +27,15 @@
         <input type="submit" name="save" class="buttons">Select</input>
          
   {% endfor %}
+
+  {% for item in availability %}
+      
+  {{ item.date }}
+  {{ item.time }}
+  <input type="submit" name="save" class="buttons">Select</input>
+   
+  {% endfor %}
+
   
   </form>
 
