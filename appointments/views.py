@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import Availability
+from .models import Booked_appointments
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .forms import BookAppointment
