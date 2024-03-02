@@ -10,7 +10,8 @@
     {% csrf_token %}
     {% for field in form %}
       {{ field }}
-    {% endfor %}       
+    {% endfor %}
+    <input type="submit" name="save" class="buttons">Select</input>       
       <!-- <label for="first_name">First name:</label>
       <input type="text" name="first_name" id="first_name">{{ form.first_name }}</input>
       <label for="last_name">Last name:</label>
@@ -27,22 +28,22 @@
       
     {{ item.date }}
     {{ item.time }}
-    <input type="submit" name="save" class="buttons">Select</input>
+    
          
   {% endfor %}
 
-  {% for item in appointments %}
-
-    {{ item.date }}
-    {{ item.time }}
-  <input type="submit" name="save" class="buttons">Select</input>
-   
-  {% endfor %}
-
+ 
+  
   
   </form>
 
-  
+{% for item in appointments %}
+
+  {{ item.date }}
+  {{ item.time }}
+
+ 
+{% endfor %}
    
 </div>
 
