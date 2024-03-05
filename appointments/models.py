@@ -5,15 +5,15 @@ from django.contrib.auth.models import User
 
 
 class Booked_appointments(models.Model):   
-    first_name = models.CharField()
-    last_name = models.CharField()
-    email_address = models.EmailField()  
-    phone_number = models.IntegerField()
-    date = models.DateField()
-    time = models.TimeField()
+    first_name = models.CharField(null=True)
+    last_name = models.CharField(null=True)
+    email_address = models.EmailField(null=True)  
+    phone_number = models.IntegerField(null=True)
+    appointment = models.ForeignKey(Availability, null=True)
+    
 
 class Availability(models.Model):    
-    date = models.DateField()
-    time = models.TimeField()
+    date = models.DateField(null=True)
+    time = models.TimeField(null=True)
 
 
