@@ -33,7 +33,7 @@ def booking(request):
     context['availability'] = availability
     if request.method =='POST':        
         form = BookAppointment(request.POST)
-        if form is_valid():
+        if form.is_valid():
             form.save()
         
     
