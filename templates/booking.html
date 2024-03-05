@@ -4,7 +4,7 @@
 
 
 <div>
-  <h3>Available Appointments</h3>
+  <h3>Book Appointment</h3>
  
     <form method="POST" action="" >
     {% csrf_token %}    
@@ -13,9 +13,9 @@
     <input type="submit" name="save" class="buttons">Select</input>       
   
             
-    <h3>Choose a date and time</h3>
+
      
-  {% for item in availability %}
+  <!-- {% for item in availability %}
       
     {{ item.date }}
     {{ item.time }}
@@ -34,7 +34,7 @@
   {{ item.time }}
 
  
-{% endfor %}
+{% endfor %} -->
    
 </div>
 
