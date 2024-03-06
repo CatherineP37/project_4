@@ -9,8 +9,8 @@ class Booked_appointments(models.Model):
     last_name = models.CharField(null=True)
     email_address = models.EmailField(null=True)  
     phone_number = models.IntegerField(null=True)
-    appointment = models.ForeignKey(Availability, null=True)
-    
+    date = models.ForeignKey(Availability, null=True)
+    time = models.ForeignKey(Availability, null=True)
 
 class Availability(models.Model):    
     date = models.DateField(null=True)
