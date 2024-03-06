@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 
 # Create your models here
 
+class Availability(models.Model):    
+    date = models.DateField(null=True)
+    time = models.TimeField(null=True)
 
 class Booked_appointments(models.Model):   
     first_name = models.CharField(null=True)
@@ -12,8 +15,6 @@ class Booked_appointments(models.Model):
     date = models.ForeignKey(Availability, null=True, on_delete= models.CASCADE)
     time = models.ForeignKey(Availability, null=True, on_delete= models.CASCADE)
 
-class Availability(models.Model):    
-    date = models.DateField(null=True)
-    time = models.TimeField(null=True)
+
 
 
