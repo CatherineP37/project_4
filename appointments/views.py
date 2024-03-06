@@ -27,17 +27,17 @@ def close_account(request):
 def booking(request):
     context = {}
     form = BookAppointment()
-    # availability = Availability.objects.all()
-    # appointments = Booked_appointments.objects.all()
+    availability = Availability.objects.all()
+    appointments = Booked_appointments.objects.all()
 
-   # context['availability'] = availability
+    context['availability'] = availability
     if request.method =='POST':        
         form = BookAppointment(request.POST)
         if form.is_valid():
             form.save()
         
     
-   # context['appointments'] = appointments
+    context['appointments'] = appointments
 
     context['form'] = form
     return render(request, 'booking.html', context)
