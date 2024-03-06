@@ -1,43 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-
-
 <div>
   <h3>Book Appointment</h3>
- 
-    <form method="POST" action="" >
-    {% csrf_token %}    
+
+  <form method="POST" action="{{ url 'booking' }}">
+    {% csrf_token %}
     {{ form }}
-  
-    <input type="submit" name="save" class="buttons">Select</input>       
-  
-            
+    <select name="appointment">
 
-     
-  <!-- {% for item in availability %}
-      
-    {{ item.date }}
-    {{ item.time }}
-    
-         
-  {% endfor %}
+    {% for item in availability %}
+      <option value="{{ item.id }}">{{ item.date }} @ {{ item.time }}</option>
+    {% endfor %}
+    </select>
 
- 
-  
-  
+    <input type="submit" name="save" class="buttons">Select</input>
   </form>
-
-{% for item in appointments %}
-
-  {{ item.date }}
-  {{ item.time }}
-
- 
-{% endfor %} -->
-   
 </div>
-
-
-
 {% endblock %}

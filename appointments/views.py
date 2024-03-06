@@ -34,12 +34,15 @@ def booking(request):
     if request.method =='POST':        
         form = BookAppointment(request.POST)
         if form.is_valid():
-            form.save()
+            instance = form.save(commit=False)
+            instance.appointment = Availability.objects.get(id=request.POST["appointment"])
+            instance.save()
         
     
     context['appointments'] = appointments
 
     context['form'] = form
+    context['availability'] = Availability.objects.all()
     return render(request, 'booking.html', context)
 
 
