@@ -7,7 +7,7 @@
   <form method="POST" action="">
     {% csrf_token %}
     {{ form }}
-    <label for="appointment">Choose an appointment</label>
+    <label for="appointment">Choose an appointment: </label>
     <select name="appointment">
 
     {% for item in availability %}
