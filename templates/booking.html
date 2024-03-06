@@ -10,7 +10,7 @@
     <select name="appointment">
 
     {% for item in availability %}
-      <option value="{{ item.id }}">{{ item.date }} @ {{ item.time }}</option>
+      <option value="{{ item.id }}">{{ item.date }} at {{ item.time }}</option>
     {% endfor %}
     </select>
 
