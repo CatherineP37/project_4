@@ -8,7 +8,7 @@
     {% csrf_token %}
     {{ form.as_p }}
     <label for="appointment">Choose an appointment: </label>
-    <select name="appointment" style="text-align:left;">
+    <select name="appointment" style="float:left;">
 
     {% for item in availability %}
       <option value="{{ item.id }}">{{ item.date }} at {{ item.time }}</option>
