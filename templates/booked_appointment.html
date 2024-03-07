@@ -8,5 +8,17 @@
       {{ message }}
     {% endfor %}
   {% endif %}
+
+  {% if appointments.count > 0 %}
+
+        {% for appointment in appointments %}
+        <div>
+            <p>Day: {{ appointment.day }}</p>
+            <p>Time: {{ appointment.time }}</p>           
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
 </div>
 {% endblock %}
