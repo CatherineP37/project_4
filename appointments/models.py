@@ -7,14 +7,15 @@ class Availability(models.Model):
     date = models.DateField(null=True)
     time = models.TimeField(null=True)
 
-class Booked_appointments(models.Model):   
+class Booked_appointments(models.Model): 
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  
     first_name = models.CharField(null=True)
     last_name = models.CharField(null=True)
     email_address = models.EmailField(null=True)  
     phone_number = models.IntegerField(null=True)
     appointment = models.ForeignKey(Availability, null=True, on_delete= models.CASCADE)
     def __str__(self):
-        return f"{self.first_name} appointment: {self.appointment}"
+        return f"{self.user.username} appointment: {self.appointment}"
 
 
 
