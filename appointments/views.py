@@ -49,7 +49,12 @@ def booking(request):
     return render(request, 'booking.html', context)
 
 def booked_appointment(request):
-    return render(request, 'booked_appointment.html', {})
+    user = request.user
+    appointments = Booked_appointments.objects.filter(user=user)    
+    return render(request, 'booked_appointment.html', {
+        'user':user,
+        'appointments':appointments,
+    })
 
 
  
