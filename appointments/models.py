@@ -13,7 +13,8 @@ class Booked_appointments(models.Model):
     email_address = models.EmailField(null=True)  
     phone_number = models.IntegerField(null=True)
     appointment = models.ForeignKey(Availability, null=True, on_delete= models.CASCADE)
-    
+    def __str__(self):
+        return f"{self.first_name} appointment: {self.appointment}"
 
 
 
