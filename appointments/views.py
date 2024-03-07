@@ -53,7 +53,7 @@ def booked_appointment(request):
     appointments = Booked_appointments.objects.filter(user=user)    
     return render(request, 'booked_appointment.html', {
         'user':user,
-        'appointments':appointments,
+        'appointments':appointments, 
     })
 
 
