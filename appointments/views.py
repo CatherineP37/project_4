@@ -5,6 +5,7 @@ from .models import Booked_appointments
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
 from .forms import BookAppointment
+from django.contrib import messages
 
 # Create your views here.
 
