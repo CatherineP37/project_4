@@ -17,5 +17,9 @@
 
     <input type="submit" name="save" class="buttons">
   </form>
+  {% if messages %}
+    {% for message in messages %}
+      {{ message }}
+  {% endif %}
 </div>
 {% endblock %}
