@@ -6,9 +6,17 @@
   
 booking = Booked_appointments.appointment.objects.filter(user=request.user) 
 
+{% if messages % }
+  {% for message in messages %}
+    {{ message }}
+{% endif %}
+
+
 {% for booking in user.booking_set.all %}
     {{ booking.appointment }}
 {% endfor %}
+
+
   
   
 </div>
