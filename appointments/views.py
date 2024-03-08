@@ -23,7 +23,7 @@ def cancellation(request, pk):
     booking = Booked_appointments.objects.get(id=pk)
     if request.method == "POST":
         booking.delete()
-        return redirect('/')
+        return redirect('appointments')
     context = {'booking':booking}
     return render(request, 'cancellation.html', context)
 
