@@ -2,19 +2,13 @@
 {% load static %}
 {% block content %}
 <div>
-  <h3>Appointment</h3>    
-  <!--Appointment Loop-->
-  {% if appointments.count > 0 %}
-  <div>      
-      <div>
-          {% for appointment in appointments %}
-          <div>
-              <p>Appointment: {{ appointment.appointment }}</p>                         
-          </div>
-          {% endfor %}
-      </div>
-  </div>
-  {% endif %}
+  <h3>Upcoming Appointment</h3>   
+  
+booking = Booked_appointments.appointment.objects.filter(user=request.user) 
+
+{% for booking in user.booking_set.all %}
+    {{ booking.appointment }}
+{% endfor %}
   
   
 </div>
