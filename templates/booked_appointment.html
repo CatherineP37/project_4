@@ -6,15 +6,11 @@
   
 
 
-{% if messages % }
-  {% for message in messages %}
-    {{ message }}
-  {% endfor %}
-{% endif %}
 
 
-{% for booking in user.booking_set.all %}
-    {{ booking.appointment }}
+{% for booking in appointments %}
+    {{ booking.appointment.date }}
+    {{ booking.appointment.time }}
 {% endfor %}
 
 
