@@ -10,7 +10,7 @@ booking = Booked_appointments.appointment.objects.filter(user=request.user)
   {% for message in messages %}
     {{ message }}
   {% endfor %}
-{% endblock %}
+{% endif %}
 
 
 {% for booking in user.booking_set.all %}
