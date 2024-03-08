@@ -50,7 +50,8 @@ def booking(request):
 
 def booked_appointment(request):
     user = request.user
-    appointments = Booked_appointments.objects.filter(user=user)    
+    appointments = Booked_appointments.objects.filter(user=user) 
+    booking = Booked_appointments.appointment.objects.filter(user=request.user)   
     return render(request, 'booked_appointment.html', {
         'user':user,
         'appointments':appointments, 
