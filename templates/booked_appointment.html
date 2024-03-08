@@ -9,7 +9,7 @@
 
 
 {% for booking in appointments %}
-    {{ booking.appointment.date | last }}    
+    {{ booking.appointment.date }}    
     {{ booking.appointment.time | last }}
 {% endfor %}
 
