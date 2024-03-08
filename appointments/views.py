@@ -16,9 +16,6 @@ def account(request):
     print(request.user.is_authenticated)
     return render(request, 'account.html', {})
 
-def appointments(request):
-    return render(request, 'appointments.html', {})
-
 def cancellation(request, pk):
     booking = Booked_appointments.objects.get(id=pk)
     if request.method == "POST":
