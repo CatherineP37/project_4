@@ -38,6 +38,7 @@ def booking(request):
         form = BookAppointment(request.POST)
         if form.is_valid():
             instance = form.save(commit=False)
+            instance.user = request.user
             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
             instance.save()
             messages.success(request, 'You have booked the following appointment: ')

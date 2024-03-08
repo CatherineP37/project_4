@@ -15,6 +15,9 @@ class Booked_appointments(models.Model):
     phone_number = models.IntegerField(null=True)
     appointment = models.ForeignKey(Availability, null=True, on_delete= models.CASCADE)
     
+    def __str__(self):
+        username = self.user.username if self.user else 'Unknown user'      
+        return f"{username} appointment: {str(self.appointment)}"
 
 
 

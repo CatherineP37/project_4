@@ -5,4 +5,5 @@ from .models import Booked_appointments
 class BookAppointment(ModelForm):  
     class Meta:
         model = Booked_appointments
-        exclude = ('appointment','user',)
+       # fields = '__all__'
+        exclude = ('appointment', 'user')

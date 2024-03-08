@@ -14,7 +14,7 @@
     {{ booking.appointment.time }}
     <form action="{% url 'cancellation' booking.id %}" method="POST">
       {% csrf_token %}
-    <input type="submit" class="buttons" name="Cancel appointment">
+      <input type="submit" class="buttons" name="cancel_button" value="Cancel Appointment">
     </form>
   {% endif %}
 {% endfor %}
