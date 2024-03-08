@@ -3,21 +3,39 @@
 {% block content %}
 <div>
   <h3>Appointment</h3>  
-  {% if messages %}
-    {% for message in messages %}
-      {{ message }}
-    {% endfor %}
-  {% endif %}
-
+  {% if user.is_authenticated %}
+  
+  
+  <div>
+      <h2>User Info:</h2>
+      <ul>
+              <li>First Name: {{ user.first_name }}</li>
+              <li>Last Name: {{ user.last_name }}</li>
+              <li>Username: {{ user.username }}</li>
+      </ul>
+  </div>
+  
+  <!--Appointment Loop-->
   {% if appointments.count > 0 %}
-
-        {% for appointment in appointments %}
-        <div>
-            <p>Day: {{ appointment.appointment }}</p>                      
-        </div>
-        {% endfor %}
-    </div>
-</div>
-{% endif %}
+  <div>
+      <h1>Appointments:</h1>
+      <div>
+          {% for appointment in appointments %}
+          <div>
+              <p>Appointment: {{ appointment.appointment }}</p>                         
+          </div>
+          {% endfor %}
+      </div>
+  </div>
+  {% endif %}
+  
+  {% else %}
+  
+  <div>
+      <h1>First Sign in!</h1>
+      <a href="{% url 'login' %}">Sign in</a>
+  </div>
+  
+  {% endif %}
 </div>
 {% endblock %}
