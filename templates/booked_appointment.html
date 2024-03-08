@@ -9,9 +9,13 @@
 
 
 {% for booking in appointments %}
+   {% if forloop.last %}
     {{ booking.appointment.date }}    
-    {{ booking.appointment.time | last }}
+    {{ booking.appointment.time }}
+  {% endif %}
 {% endfor %}
+
+
 
 
   
