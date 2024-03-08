@@ -12,7 +12,10 @@
    {% if forloop.last %}
     {{ booking.appointment.date }}    
     {{ booking.appointment.time }}
-    <a href="{% url 'cancellation' %}" class="buttons">Cancel appointment</a>
+    <form action="{% url 'cancellation' booking.id %}" method="POST">
+      {% csrf_token %}
+    <input type="submit" class="buttons" name="Cancel appointment">
+    </form>
   {% endif %}
 {% endfor %}
 

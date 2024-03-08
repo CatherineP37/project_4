@@ -6,7 +6,7 @@ urlpatterns = [
     path('account/',views.account, name="account"),    
     path('appointments/',views.appointments, name="appointments"),
     path('booking/', views.booking, name="booking"),
-    path('cancellation/', views.cancellation, name="cancellation"),   
+    path('cancellation/<str:pk>/', views.cancellation, name="cancellation"),   
     path('close_account/', views.close_account, name="close_account"),  
     path('booked_appointment/', views.booked_appointment, name="booked_appointment"),
 ]

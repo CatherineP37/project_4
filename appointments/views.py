@@ -19,13 +19,18 @@ def account(request):
 def appointments(request):
     return render(request, 'appointments.html', {})
 
-def cancellation(request):
-    return render(request, 'cancellation.html', {})
+def cancellation(request, pk):
+    booking = Booked_appointments.objects.get(id=pk)
+    if request.method == "POST":
+        booking.delete()
+        return redirect('/')
+    context = {'booking':booking}
+    return render(request, 'cancellation.html', context)
 
 def close_account(request):
     return render(request, 'close_account.html', {})
 
-def booking(request):
+def booking(request):    
     context = {}
     form = BookAppointment()
     availability = Availability.objects.all()
@@ -60,6 +65,8 @@ def booked_appointment(request):
         'appointments':appointments, 
         'booking':booking,
     })
+
+
 
 
  
