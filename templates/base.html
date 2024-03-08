@@ -47,10 +47,7 @@
       <nav>
         <ul id="list">
           
-          {% if request.user.is_authenticated %}        
-          <li>
-            <a href="{% url 'appointments' %}">View upcoming appointments</a>
-          </li>      
+          {% if request.user.is_authenticated %}       
           <li>
             <a href="{% url 'close_account' %}">Close account</a>
           </li> 
