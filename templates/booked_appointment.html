@@ -12,6 +12,7 @@
    {% if forloop.last %}
     {{ booking.appointment.date }}    
     {{ booking.appointment.time }}
+    <a href="{% url 'cancellation' %}" class="buttons">Cancel appointment</a>
   {% endif %}
 {% endfor %}
 
