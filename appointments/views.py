@@ -55,6 +55,7 @@ def booked_appointment(request):
     return render(request, 'booked_appointment.html', {
         'user':user,
         'appointments':appointments, 
+        'booking':booking,
     })
 
 
