@@ -76,6 +76,24 @@ def booked_appointment(request):
 # def double_booked(request):
    # return render(request, 'double_booked.html', {})
 
+def delete_appointment(request, pk):
+   
+    appointment_instance = get_object_or_404(Booked_appointments, id=pk)
+
+    if appointment_instance.is_past_date:
+            action = 'delete record of'
+        else:
+            action = 'cancel'
+
+        context = {
+            'appointment_instance': appointment_instance,
+            'action': action,
+        }
+        return render(request, 'cancellation.html', context)
+
+    
+      
+
 
  
 
