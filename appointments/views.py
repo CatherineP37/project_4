@@ -41,9 +41,15 @@ def booking(request):
             instance = form.save(commit=False)
             instance.user = request.user
             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
-            instance.save()
-            messages.success(request, 'You have booked the following appointment: ')
-            return redirect('booked_appointment')  
+            if BookAppointment.objects.filter(
+                user=form_data.user,
+                date=form_data.date,
+                time=form_data.time,
+            ).exists():
+                return render(request, 'double_booked.html')
+            else:                
+                instance.save()            
+                return redirect('booked_appointment')  
     
 
 
