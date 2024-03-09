@@ -43,9 +43,11 @@ def booking(request):
             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
             instance.save()
             messages.success(request, 'You have booked the following appointment: ')
-            return redirect('booked_appointment')
-        
+            return redirect('booked_appointment')  
     
+
+
+            
     context['appointments'] = appointments
 
     context['form'] = form
