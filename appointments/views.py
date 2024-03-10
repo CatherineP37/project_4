@@ -25,8 +25,6 @@ def cancellation(request, pk):
     context = {'booking':booking}
     return render(request, 'cancellation.html', context)
 
-def close_account(request):
-    return render(request, 'close_account.html', {})
 
 def booking(request):    
     context = {}
