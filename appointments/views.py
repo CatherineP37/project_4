@@ -73,8 +73,8 @@ def booked_appointment(request):
         'booking':booking,
     })
 
-# def double_booked(request):
-   # return render(request, 'double_booked.html', {})
+def double_booked(request):
+    return render(request, 'double_booked.html', {})
 
 def delete_appointment(request, pk):
    
