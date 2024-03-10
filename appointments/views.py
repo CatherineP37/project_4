@@ -89,7 +89,7 @@ def delete_appointment(request, pk):
             'appointment_instance': appointment_instance,
             'action': action,
         }
-        return render(request, 'cancellation.html', context)
+        return render(request, 'delete_appointment.html', context)
 
 def update_booking(request, pk):
     appointment = Booked_appointments.objects.get(id=pk)
@@ -101,7 +101,7 @@ def update_booking(request, pk):
             instance = form.save(commit=False)
             instance.user = request.user
             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
-    return render(request, 'cancellation.html', {})
+    return render(request, 'update_booking.html', {})
 
     
       
