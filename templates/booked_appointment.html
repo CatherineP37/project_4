@@ -16,6 +16,7 @@
       {% csrf_token %}
       <input type="submit" class="buttons" name="cancel_button" value="Cancel appointment">
     </form>
+    <a href="{% url 'update_appointment' %}" class="buttons">Update appointment</a>
     <a href="{% url 'booking' %}" class="buttons">Book another appointment</a>
   {% endif %}
 {% endfor %}
