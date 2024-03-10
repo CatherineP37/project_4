@@ -90,7 +90,7 @@ def update_booking(request, pk):
     form = BookAppointment(instance=appointment)
     context = {'form':form}
     if request.method =='POST':        
-        form = appointments(request.POST, instance=appointment)
+        form = BookAppointment(data=request.POST)
         if form.is_valid():
             instance = form.save(commit=False)
             instance.user = request.user
