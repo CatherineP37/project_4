@@ -12,11 +12,14 @@
    {% if forloop.last %}
     {{ booking.appointment.date }}    
     {{ booking.appointment.time }}
+    <form action="{% url 'update_order' booking.id %}" method="POST">
+      {% csrf_token %}
+      <input type="submit" class="buttons" name="cancel_button" value="Update appointment">
+    </form>
     <form action="{% url 'cancellation' booking.id %}" method="POST">
       {% csrf_token %}
       <input type="submit" class="buttons" name="cancel_button" value="Cancel appointment">
-    </form>
-    <a href="{% url 'update_appointment' %}" class="buttons">Update appointment</a>
+    </form>    
     <a href="{% url 'booking' %}" class="buttons">Book another appointment</a>
   {% endif %}
 {% endfor %}
