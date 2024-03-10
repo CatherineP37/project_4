@@ -2,6 +2,24 @@
 {% load static %}
 {% block content %}
 
+<div>
+    <h3>Update Appointment</h3>
+  
+    <form method="POST" action="">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <label for="appointment" style="float:left; margin-right:15px;">Choose an appointment: </label>
+      <select name="appointment" style="float:left;">
+  
+      {% for item in availability %}
+        <option value="{{ item.id }}">{{ item.date }} at {{ item.time }}</option>
+      {% endfor %}
+      </select>
+  
+      <input type="submit" name="save" class="buttons" value="Book appointment">
+    </form>
+  
+  </div>
 
 
 {% endblock %}
