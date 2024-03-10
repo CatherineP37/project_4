@@ -35,8 +35,8 @@ def booking(request):
     appointments = Booked_appointments.objects.all()
 
     context['availability'] = availability
-    if request.method =='POST':        
-        form = appointments(request.POST)
+    if request.method =='POST':       
+        form = BookAppointment(data=request.POST)
         if form.is_valid():
             instance = form.save(commit=False)
             instance.user = request.user
