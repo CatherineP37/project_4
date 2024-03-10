@@ -91,7 +91,7 @@ def delete_appointment(request, pk):
         }
         return render(request, 'cancellation.html', context)
 
-def update_booking(request):
+def update_booking(request, pk):
     form = BookAppointment()
     context = {'form':form}
     return render(request, 'cancellation.html', {})
