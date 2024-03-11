@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import generic
 from .models import Availability
 from .models import Booked_appointments
@@ -83,20 +83,37 @@ def delete_appointment(request, pk):
         }
         return render(request, 'delete_appointment.html', context)
 
+# def update_booking(request, pk):
+#     appointment = Booked_appointments.objects.get(id=pk)
+#     form = BookAppointment(instance=appointment)
+#     context = {'form':form}
+#     if request.method =='POST':        
+#         form = BookAppointment(data=request.POST)
+#         if form.is_valid():
+#             instance = form.save(commit=False)
+#             instance.user = request.user
+#             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
+#     return render(request, 'booking.html', {})
+
+
 def update_booking(request, pk):
-    appointment = Booked_appointments.objects.get(id=pk)
-    form = BookAppointment(instance=appointment)
-    context = {'form':form}
-    if request.method =='POST':        
-        form = BookAppointment(data=request.POST)
+    appointment = get_object_or_404(Booked_appointments, id=pk)
+    if request.method == 'POST':
+        form = BookAppointment(request.POST, instance=appointment)
         if form.is_valid():
-            instance = form.save(commit=False)
-            instance.user = request.user
-            instance.appointment = Availability.objects.get(id=request.POST["appointment"])
-    return render(request, 'booking.html', {})
-
-
-      
+            updated_appointment = form.save(commit=False)
+            updated_appointment.user = request.user
+            updated_appointment.appointment = Availability.objects.get(id=request.POST.get("appointment"))
+            updated_appointment.save()
+            messages.success(request, 'Your appointment has been updated successfully.')
+            return redirect('account')  # Or wherever you want to redirect after updating
+    else:
+        form = BookAppointment(instance=appointment)
+    context = {
+        'form': form,
+        'availability': Availability.objects.all()
+    }
+    return render(request, 'update_booking.html', context)      
 
 
  
