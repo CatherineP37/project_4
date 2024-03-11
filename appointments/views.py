@@ -93,7 +93,7 @@ def update_booking(request, pk):
             instance = form.save(commit=False)
             instance.user = request.user
             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
-    return render(request, 'update_booking.html', {})
+    return render(request, 'booking.html', {})
 
     
       
