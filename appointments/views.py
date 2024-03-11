@@ -95,7 +95,7 @@ def update_booking(request, pk):
             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
     return render(request, 'booking.html', {})
 
-    
+
       
 
 

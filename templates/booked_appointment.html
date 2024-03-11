@@ -7,9 +7,10 @@
 
 
 
-
 {% for booking in appointments %}
-  <!--{% if forloop.last %}-->
+{% comment %}
+
+  {% endcomment %}
     {{ booking.appointment.date }}    
     {{ booking.appointment.time }}
     <form action="{% url 'update_booking' booking.id %}" method="POST">
@@ -20,14 +21,11 @@
       {% csrf_token %}
       <input type="submit" class="buttons" name="cancel_button" value="Cancel appointment">
     </form>       
- <!-- {% endif %}-->
+    {% comment %}
+ 
+ {% endcomment %}
 {% endfor %}
 <a href="{% url 'booking' %}" class="buttons">Book new appointment</a>
-
-
-
-
-  
   
 </div>
 {% endblock %}
