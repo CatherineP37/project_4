@@ -24,6 +24,17 @@ class Booked_appointments(models.Model):
     def is_past_date(self):        
         return date.today() >= self.date
 
+    #Signal
+
+    def delete_appointment(sender, instance, created, **kwargs):
+        
+        if created:
+            Availability.objects.delete(instance)
+    
+    post_save.connect(delete_appointment, sender=Booked_appointments)
+
+
+
 
 
 
