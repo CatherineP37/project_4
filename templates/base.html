@@ -48,9 +48,7 @@
         <ul id="list">
           
           {% if request.user.is_authenticated %}       
-          <li>
-            <a href="{% url 'close_account' %}">Close account</a>
-          </li> 
+         
           <li>
             <a href="{% url 'booked_appointment' %}">Upcoming appointments</a>
           </li>                     
