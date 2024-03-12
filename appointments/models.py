@@ -29,9 +29,10 @@ def delete_appointment(sender, instance, created, **kwargs):
     availability = Availability
     if created:
         Availability.objects.delete(instance)
-    
-        post_save.connect(delete_appointment, sender=booked_appointment)
         print("Is it working?")
+    
+    post_save.connect(delete_appointment, sender=booked_appointment)
+        
 
 
 
