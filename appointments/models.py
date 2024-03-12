@@ -28,7 +28,7 @@ class Booked_appointments(models.Model):
     def delete_appointment(sender, instance, created, **kwargs):
         
         if created:
-            #Availability.objects.delete(instance)
+            Availability.objects.delete(instance)
     
     post_save.connect(delete_appointment, sender=Booked_appointments)
 
