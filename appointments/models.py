@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from datetime import datetime, date
-from django.db.models.signals import post_save
+#from django.db.models.signals import post_save
 
 # Create your models here
 
@@ -23,14 +23,15 @@ class Booked_appointments(models.Model):
 
   
 
-    #Signal
+    # Signal
 
-    def delete_appointment(sender, instance, created, **kwargs):
-        booked_appointment = Booked_appointments
-        if created:
-            Availability.objects.delete(instance)
+    #def delete_appointment(sender, instance, created, **kwargs):
+        #booked_appointment = Booked_appointments
+        #availability = Availability
+        #if created:
+        #Availability.objects.delete(instance)
     
-    post_save.connect(delete_appointment, sender=booked_appointment)
+        #post_save.connect(delete_appointment, sender=booked_appointment)
 
 
 
