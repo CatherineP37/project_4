@@ -25,13 +25,13 @@ class Booked_appointments(models.Model):
 
     # Signal
 
-    #def delete_appointment(sender, instance, created, **kwargs):
-        #booked_appointment = Booked_appointments
-        #availability = Availability
-        #if created:
-        #Availability.objects.delete(instance)
+    def delete_appointment(sender, instance, created, **kwargs):
+        booked_appointment = Booked_appointments
+        availability = Availability
+        if created:
+        Availability.objects.delete(instance)
     
-        #post_save.connect(delete_appointment, sender=booked_appointment)
+        post_save.connect(delete_appointment, sender=booked_appointment)
 
 
 
