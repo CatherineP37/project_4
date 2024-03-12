@@ -29,9 +29,10 @@ class Booked_appointments(models.Model):
         booked_appointment = Booked_appointments
         availability = Availability
         if created:
-        Availability.objects.delete(instance)
+            Availability.objects.delete(instance)
     
         post_save.connect(delete_appointment, sender=booked_appointment)
+        print("Is it working?")
 
 
 
