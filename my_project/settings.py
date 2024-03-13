@@ -35,7 +35,8 @@ ALLOWED_HOSTS = [
     '8000-catherinep37-project4-co6ggzp2rim.ws-eu108.gitpod.io',
     '8000-catherinep37-project4-eeoyioqy76v.ws-eu108.gitpod.io',
     '8000-catherinep37-project4-wo3lj7io8j1.ws-eu108.gitpod.io',
-    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu110.gitpod.io']
+    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu110.gitpod.io',
+    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu109.gitpod.io']
 
 
 # Application definition
@@ -114,6 +115,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://8000-catherinep37-project4-eeoyioqy76v.ws-eu108.gitpod.io",
     "https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/",
     "https://8000-catherinep37-project4-wo3lj7io8j1.ws-eu110.gitpod.io",
+    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu109.gitpod.io',
 ]
 
 # Password validation

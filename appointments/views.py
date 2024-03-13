@@ -104,16 +104,7 @@ def update_booking(request, pk):
     }
     return render(request, 'update_booking.html', context)   
 
-{% comment %}  
 
-#def check_date(booking):
-    #booking = Booked_appointments.objects.get(date=date, time=time)
-    #now = datetime.datetime.now()
-
-    #if booking.date < now: 
-        #booking.delete()
-
-{% endcomment %}
 
 
  
