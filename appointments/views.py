@@ -102,14 +102,18 @@ def update_booking(request, pk):
         'form': form,
         'availability': Availability.objects.all()
     }
-    return render(request, 'update_booking.html', context)      
+    return render(request, 'update_booking.html', context)   
 
-def check_date(booking):
-    booking = Booked_appointments.objects.get(date=date, time=time)
-    now = datetime.datetime.now()
+{% comment %}  
 
-    if booking.date < now: 
-        booking.delete()
+#def check_date(booking):
+    #booking = Booked_appointments.objects.get(date=date, time=time)
+    #now = datetime.datetime.now()
+
+    #if booking.date < now: 
+        #booking.delete()
+
+{% endcomment %}
 
 
  
