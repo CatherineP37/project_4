@@ -31,7 +31,7 @@ class Booked_appointments(models.Model):
             Availability.objects.delete(instance)
             print("Is it working?")    
 
-    post_save.connect(delete_appointment, sender=booked_appointment)
+    post_save.connect(delete_appointment, sender=Booked_appointments)
         
 
 
