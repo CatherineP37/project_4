@@ -57,8 +57,7 @@ def booked_appointment(request):
     print('USER: ', user)
     appointments = Booked_appointments.objects.filter(user=user) 
     print('APP: ', appointments)
-    # print('BOOKING: ', appointments.)
-    # booking = Booked_appointments.appointment.objects.filter(user=request.user)   
+   
     return render(request, 'booked_appointment.html', {
         'user':user,
         'appointments':appointments, 
@@ -83,17 +82,7 @@ def delete_appointment(request, pk):
         }
         return render(request, 'delete_appointment.html', context)
 
-# def update_booking(request, pk):
-#     appointment = Booked_appointments.objects.get(id=pk)
-#     form = BookAppointment(instance=appointment)
-#     context = {'form':form}
-#     if request.method =='POST':        
-#         form = BookAppointment(data=request.POST)
-#         if form.is_valid():
-#             instance = form.save(commit=False)
-#             instance.user = request.user
-#             instance.appointment = Availability.objects.get(id=request.POST["appointment"])
-#     return render(request, 'booking.html', {})
+
 
 
 def update_booking(request, pk):
@@ -114,6 +103,13 @@ def update_booking(request, pk):
         'availability': Availability.objects.all()
     }
     return render(request, 'update_booking.html', context)      
+
+def check_date(booking):
+    booking = Booked_appointments.objects.get(date=date, time=time)
+    now = datetime.datetime.now()
+
+    if booking.date < now: 
+        booking.delete()
 
 
  
