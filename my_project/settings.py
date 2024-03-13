@@ -34,7 +34,8 @@ ALLOWED_HOSTS = [
     'doctor-appointment-booker-567ff6ab7202.herokuapp.com',
     '8000-catherinep37-project4-co6ggzp2rim.ws-eu108.gitpod.io',
     '8000-catherinep37-project4-eeoyioqy76v.ws-eu108.gitpod.io',
-    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu108.gitpod.io']
+    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu108.gitpod.io',
+    '8000-catherinep37-project4-wo3lj7io8j1.ws-eu110.gitpod.io']
 
 
 # Application definition
