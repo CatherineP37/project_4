@@ -9,15 +9,7 @@ class Availability(models.Model):
     date = models.DateField(null=True)
     time = models.TimeField(null=True)
 
-     # Signal
-    def delete_appointment(sender, instance, created, **kwargs):
-        #booked_appointment = Booked_appointments
-        #availability = Availability
-        if created:
-            Availability.objects.delete(instance)
-            print("Is it working?")    
-
-    post_save.connect(delete_appointment, sender=Booked_appointments)
+ 
 
 class Booked_appointments(models.Model): 
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  
@@ -30,6 +22,15 @@ class Booked_appointments(models.Model):
     def __str__(self):
         username = self.user.username if self.user else 'Unknown user'      
         return f"{username} appointment: {str(self.appointment)}"
+
+    # Signal
+    def delete_appointment(sender, instance, created, **kwargs):
+                
+        if created:
+            Booked_appointments.objects.delete(instance)
+            print("Is it working?")    
+
+    post_save.connect(delete_appointment, sender=Availability)
 
   
 
