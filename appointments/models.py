@@ -7,9 +7,7 @@ from django.db.models.signals import post_save
 
 class Availability(models.Model):    
     date = models.DateField(null=True)
-    time = models.TimeField(null=True)
-
- 
+    time = models.TimeField(null=True) 
 
 class Booked_appointments(models.Model): 
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)  
