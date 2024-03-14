@@ -77,7 +77,7 @@ def update_booking(request, pk):
             updated_appointment.appointment = Availability.objects.get(id=request.POST.get("appointment"))
             updated_appointment.save()
             messages.success(request, 'Your appointment has been updated successfully.')
-            return redirect('account')  # Or wherever you want to redirect after updating
+            return redirect('account')  
     else:
         form = BookAppointment(instance=appointment)
     context = {
