@@ -8,7 +8,7 @@
 
 {% for booking in appointments %}
 
-    {{ booking.appointment.date }}    
+    {{ booking.appointment.date }} 
     {{ booking.appointment.time }}
     <a href="{% url 'update_booking' booking.id %}" class="buttons">Update appointment</a>
     <form action="{% url 'cancellation' booking.id %}" method="POST">
