@@ -86,6 +86,13 @@ def update_booking(request, pk):
     }
     return render(request, 'update_booking.html', context)   
 
+def check_date(appointment):
+    now = datetime.datetime.now()
+    appointment = Event.objects.get(date=date)
+
+    if appointment.date < now: 
+        appointment.delete()
+
 
 
 
