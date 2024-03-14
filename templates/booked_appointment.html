@@ -12,11 +12,8 @@
     {{ booking.appointment.date }}    
     {{ booking.appointment.time }}
     <a href="{% url 'update_booking' booking.id %}" class="buttons">Update appointment</a>
-    <form action="{% url 'cancellation' booking.id %}" method="POST">
-      {% csrf_token %}
-      <input type="submit" class="buttons" name="cancel_button" value="Cancel appointment">
-    </form>       
-  
+    <a href="{% url 'cancellation' booking.id %}" class="buttons">Cancel appointment</a>        
+    
 {% endfor %}
 <a href="{% url 'booking' %}" class="buttons">Book new appointment</a>
   
