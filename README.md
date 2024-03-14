@@ -11,13 +11,16 @@ The following must be included in the app:
 
 - Patient log in screen
 - Sign up form for new account
-- Calendar
+- Booking form
+- List of available appointments
+- Ability to view booked appointments
 - Ability to cancel appointments
 
 It's not necessary to include the following in the app:
 
 - Doctor log in screen
 - Patient notes
+
 
 ## Sitemap
 
