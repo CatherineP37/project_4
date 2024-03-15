@@ -20,6 +20,15 @@ class Booked_appointments(models.Model):
     def __str__(self):
         username = self.user.username if self.user else 'Unknown user'      
         return f"{username} appointment: {str(self.appointment)}"
+    
+    # Signal
+    def delete_appointment(sender, instance, created, **kwargs):
+                
+        if created:
+            Availability.objects.delete(instance)
+            print("Is it working?")    
+
+    post_save.connect(delete_appointment, sender=Booked_appointments)
 
     
   
