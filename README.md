@@ -37,6 +37,7 @@ Epic - booking an appointment online
 
 - As a patient I want to book an appointment easily online.
 - As a patient I want to see a list of available appointments.
+- As a patient I don't want to book an appointment that someone else has booked.
 
 Epic - managing my appointments
 
