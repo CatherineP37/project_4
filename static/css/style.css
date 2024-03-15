@@ -133,7 +133,7 @@ main {
 }
 
 main div {
-	background-color: pink;
+	background-color: #97e1be;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -164,7 +164,7 @@ main div p {
 /* Forms */
 
 form {
-    background-color: Orange;
+    background-color: #97e1be;
 	width: 90%;
 	margin: 20px auto;
 	padding: 20px;
