@@ -21,7 +21,6 @@ It's not necessary to include the following in the app:
 - Doctor log in screen
 - Patient notes
 
-
 ## Sitemap
 
 ![Sitemap](images/map.png)
@@ -54,5 +53,27 @@ These are wireframes for the mobile screens.
 ## Database Schema
 
 ![database schema](images/database.png)
+
+## Features
+
+## Bugs
+
+## Testing
+
+## Deployment
+
+This project was deployed using Heroku.
+
+A Procfile and a requirements.txt was added to the project.
+
+A new app was set up in Heroku and the config vars were added to the app.
+
+GitHub was selected as the deployment menthod and the GitHub repository was linked to Heroku.
+
+"Deploy Branch" was selected to manually deploy the project.
+
+## Credits
+
+
 
 
