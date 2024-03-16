@@ -91,7 +91,7 @@ def update_booking(request, pk):
         form = BookAppointment(instance=appointment)
     context = {
         'form': form,
-        'availability': Availability.objects.all()
+        'availability': Availability1,      
     }
     return render(request, 'update_booking.html', context)   
 
