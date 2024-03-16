@@ -87,7 +87,29 @@ GitHub was selected as the deployment menthod and the GitHub repository was link
 
 ## Credits
 
+- w3 schools 
 
+- Codemy.com
+
+- Code Institute
+
+- Caleb Curry
+
+- Tony Teaches Tech
+
+- Dennis Ivy
+
+- stackoverflow
+
+- John Abdsho
+
+- Code Institute
+
+## Acknowledgements
+
+The tutors at Code Institute
+
+My mentor DevEd Bowers
 
 
 
