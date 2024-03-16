@@ -32,7 +32,16 @@ def booking(request):
     availability = Availability.objects.all()
     appointments = Booked_appointments.objects.all()
 
-    context['availability'] = availability
+    # Retrieve the IDs of already booked appointments
+    booked_ids = [appointment.appointment.id for appointment in appointments]
+    print(booked_ids)
+
+    # Filter out booked appointments from availability
+    availability1 = availability.exclude(id__in=booked_ids)
+    print(availability1)
+
+    context['availability'] = availability1
+    print(context)
     if request.method =='POST':       
         form = BookAppointment(data=request.POST)
         if form.is_valid():
