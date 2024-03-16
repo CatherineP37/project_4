@@ -101,8 +101,6 @@ Dennis Ivy
 
 stackoverflow
 
-John Abdsho
-
 Code Institute
 
 ## Acknowledgements
