@@ -150,7 +150,9 @@ Chrome DevTools to see what it looks like in a variety of screen sizes.
 
 ### Lighthouse Testing
 
+This is the Lighthouse test result:
 
+![Lighthouse test result](images/lighthouse.png)
 
 ### Manual Testing
 
