@@ -70,8 +70,21 @@ The text on the buttons was not fitting in the mobile view so I set the font siz
 
 I was trying to prevent double bookings by filtering out appointments that had been booked. It wasn't working and the booked appointments were still showing up on the list of available appointments. This was solved by editing the booking view.
 
-
 ## Testing
+
+# W3C HTML Test
+
+# W3C CSS Test
+
+# JSHint Test 
+
+# CI Python Linter Test
+
+# Browser Testing
+
+# Manual Testing
+
+# Automated Testing
 
 ## Deployment
 
