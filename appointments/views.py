@@ -25,11 +25,11 @@ def cancellation(request, pk):
     if request.method == "POST":
         booking.delete()
         return redirect('account')
-    context = {'booking':booking}
+    context = {'booking' :booking}
     return render(request, 'cancellation.html', context)
 
 
-def booking(request):   
+def booking(request):
     context = {}
     form = BookAppointment()
     availability = Availability.objects.all()
@@ -50,8 +50,8 @@ def booking(request):
         if form.is_valid():
             instance = form.save(commit=False)
             instance.user = request.user
-            instance.appointment = Availability.objects.get(id=request.POST["appointment"])       
-            instance.save()       
+            instance.appointment = Availability.objects.get(id=request.POST["appointment"])
+            instance.save()
             return redirect('booked_appointment')
             
     context['appointments'] = appointments
@@ -92,9 +92,9 @@ def update_booking(request, pk):
         form = BookAppointment(instance=appointment)
     context = {
         'form': form,
-        'availability': Availability.objects.all()       
+        'availability': Availability.objects.all()
     }
-    return render(request, 'update_booking.html', context)   
+    return render(request, 'update_booking.html', context)
 
 
 
