@@ -107,7 +107,7 @@ These are wireframes for the mobile screens.
 
 There are no current bugs in the project.
 
-These are some of the bugs that happened during the development of the project:
+These are some of the bugs that occurred during the development of the project:
 
 There was an issue with trying to get the dropdown menu to work. By mistake I hadn't put the link to the JavaScript file in the html file. After I added the link, the dropdown menu worked but was only showing the dropdown part while it was being pressed. Also the words were not visible and the width of the dropdown was very narrow and that's probably why the words weren't on it. I solved the issue by changing the css.
 
@@ -156,7 +156,11 @@ This is the Lighthouse test result:
 
 ### Manual Testing
 
-### Automated Testing
+As I went through the project I manually tested each user story thoroughly. I tested the views, 
+the models, the booking form and the authentication. The user can create an account so that they
+can log in. They can log in with their details. They can view the appointments that they've
+already booked and they can update or delete the bookings. They can use the booking form to book
+an appointment and they can choose from a list of available appointments.
 
 ## Deployment
 
@@ -186,7 +190,6 @@ Dennis Ivy
 
 stackoverflow
 
-Code Institute
 
 ## Acknowledgements
 
