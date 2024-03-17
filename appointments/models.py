@@ -5,7 +5,7 @@ from django.db.models.signals import post_save
 
 # Create your models here
 
-class Availability(models.Model):   
+class Availability(models.Model): 
     date = models.DateField(null=True)
     time = models.TimeField(null=True)
 
@@ -18,7 +18,7 @@ class Booked_appointments(models.Model):
     appointment = models.ForeignKey(Availability, null=True, on_delete= models.CASCADE)
     
     def __str__(self):
-        username = self.user.username if self.user else 'Unknown user'   
+        username = self.user.username if self.user else 'Unknown user'
         return f"{username} appointment: {str(self.appointment)}"
     
  
