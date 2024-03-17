@@ -5,6 +5,10 @@ a medical centre. The app helps to reduce the number of calls coming through to
 the medical centre. This means that the patients who do call in don't have to
 wait as long for their call to be answered.
 
+Link to the deployed project:
+
+[Deployed Site](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
+
 ## Scope
 
 The following must be included in the app:
