@@ -7,7 +7,7 @@ wait as long for their call to be answered.
 
 Link to the deployed project:
 
-[Deployed Site](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
+[Deployed website](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
 
 ## Scope
 
