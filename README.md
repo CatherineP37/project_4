@@ -68,6 +68,10 @@ These are wireframes for the mobile screens.
 
 ![Landing page](images/landing_page.png)
 
+### Sign up form
+
+![Sign up form](images/sign_up.png)
+
 ### Login form
 
 ![Login form](images/login.png)
