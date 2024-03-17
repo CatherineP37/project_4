@@ -82,6 +82,8 @@ I was trying to prevent double bookings by filtering out appointments that had b
 
 # Browser Testing
 
+# Lighthouse Testing
+
 # Manual Testing
 
 # Automated Testing
