@@ -141,11 +141,16 @@ The JavaScript was tested with JSHint and no problems were found.
 
 ### CI Python Linter Test
 
-
+Python was tested with the CI Python Linter. No major issues were found.
 
 ### Browser Testing
 
+The website was tested on a variety of browsers. It was also tested in Google 
+Chrome DevTools to see what it looks like in a variety of screen sizes.
+
 ### Lighthouse Testing
+
+
 
 ### Manual Testing
 

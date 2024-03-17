@@ -11,14 +11,14 @@
 
     {{ booking.appointment.date }} 
     {{ booking.appointment.time }}
-  <a href="{% url 'update_booking' booking.id %}" class="buttons">Update appointment</a>
+  <a href="{% url 'update_booking' booking.id %}" class="buttons" aria-label="Update booking">Update booking</a>
   <form action="{% url 'cancellation' booking.id %}" method="POST" style="width:100%;">
    {% csrf_token %}
-    <input type="submit" class="buttons" name="cancel_button" value="Cancel appointment">
+    <input type="submit" class="buttons" name="cancel_button" aria-label="Cancel appointment" value="Cancel appointment">
   </form>  
  
 {% endfor %}
-<a href="{% url 'booking' %}" class="buttons">Book new appointment</a>
+<a href="{% url 'booking' %}" class="buttons" aria-label="Book appointment">Book new appointment</a>
 
 </div>
 {% endblock %}

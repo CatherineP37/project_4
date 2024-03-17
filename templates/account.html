@@ -2,8 +2,8 @@
 {% load static %}
 {% block content %}
 
-  <a href="{% url 'booking' %}" class="buttons">Book an appointment</a>		    
+  <a href="{% url 'booking' %}" class="buttons" aria-label="Book appointment">Book an appointment</a>		    
 
-  <a href="{% url 'booked_appointment' %}" class="buttons">View booked appointments</a>
+  <a href="{% url 'booked_appointment' %}" class="buttons" aria-label="View booked appointments">View booked appointments</a>
 
 {% endblock %}
