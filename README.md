@@ -58,8 +58,35 @@ These are wireframes for the mobile screens.
 
 ### Header
 
-![Header](assets/images/header.png)
+![Header](images/header.png)
 
+### Menu for users who are not signed in
+
+![Menu for users who are not signed in](images/menu_1.png)
+
+### Landing page
+
+![Landing page](images/landing_page.png)
+
+### Login form
+
+![Login form](images/login.png)
+
+### User account home page
+
+![User account home page](images/account.png)
+
+### Appointment booking form
+
+![Appointment booking form](images/booking.png)
+
+### Booked appointments page
+
+![Booked appointments page](images/bookings.png)
+
+### Sign out
+
+![Sign out](images/sign_out.png)
 
 ## Bugs
 
