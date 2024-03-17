@@ -31,6 +31,10 @@ It's not necessary to include the following in the app:
 
 ## User Stories
 
+Here is a picture of the GitHub Kanban board for this project:
+
+![Kanban board](images/user_stories.png)
+
 Epic - patient account
 
 - As a patient I want to set up an account so that I can easily book appointments online.
