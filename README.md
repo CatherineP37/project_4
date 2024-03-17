@@ -56,6 +56,11 @@ These are wireframes for the mobile screens.
 
 ## Features
 
+### Header
+
+![Header](assets/images/header.png)
+
+
 ## Bugs
 
 There was an issue with trying to get the dropdown menu to work. By mistake I hadn't put the link to the JavaScript file in the html file. After I added the link, the dropdown menu worked but was only showing the dropdown part while it was being pressed. Also the words were not visible and the width of the dropdown was very narrow and that's probably why the words weren't on it. I solved the issue by changing the css.
@@ -72,21 +77,21 @@ I was trying to prevent double bookings by filtering out appointments that had b
 
 ## Testing
 
-# W3C HTML Test
+### W3C HTML Test
 
-# W3C CSS Test
+### W3C CSS Test
 
-# JSHint Test 
+### JSHint Test 
 
-# CI Python Linter Test
+### CI Python Linter Test
 
-# Browser Testing
+### Browser Testing
 
-# Lighthouse Testing
+### Lighthouse Testing
 
-# Manual Testing
+### Manual Testing
 
-# Automated Testing
+### Automated Testing
 
 ## Deployment
 
