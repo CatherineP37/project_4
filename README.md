@@ -34,9 +34,9 @@ It's not necessary to include the following in the project:
 
 ## User Stories
 
-Here is a picture of the GitHub Kanban board for this project:
+Here is a picture of the GitHub project board for this project:
 
-![Kanban board](images/user_stories.png)
+![Project board](images/user_stories.png)
 
 Epic - patient account
 
