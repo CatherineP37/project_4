@@ -10,12 +10,15 @@ from datetime import date
 
 # Create your views here.
 
+
 def index(request):
     return render(request, 'index.html', {})
+
 
 def account(request):
     print(request.user.is_authenticated)
     return render(request, 'account.html', {})
+
 
 def cancellation(request, pk):
     booking = Booked_appointments.objects.get(id=pk)
@@ -26,7 +29,7 @@ def cancellation(request, pk):
     return render(request, 'cancellation.html', context)
 
 
-def booking(request):    
+def booking(request):   
     context = {}
     form = BookAppointment()
     availability = Availability.objects.all()
@@ -42,13 +45,13 @@ def booking(request):
 
     context['availability'] = availability1
     print(context)
-    if request.method =='POST':       
+    if request.method == 'POST':
         form = BookAppointment(data=request.POST)
         if form.is_valid():
             instance = form.save(commit=False)
             instance.user = request.user
-            instance.appointment = Availability.objects.get(id=request.POST["appointment"])         
-            instance.save()            
+            instance.appointment = Availability.objects.get(id=request.POST["appointment"])       
+            instance.save()       
             return redirect('booked_appointment')
             
     context['appointments'] = appointments
@@ -56,20 +59,23 @@ def booking(request):
     context['availability'] = availability1
     return render(request, 'booking.html', context)
 
+
 def booked_appointment(request):
     user = request.user
     print('USER: ', user)
-    appointments = Booked_appointments.objects.filter(user=user) 
+    appointments = Booked_appointments.objects.filter(user=user)
     print('APP: ', appointments)
    
     return render(request, 'booked_appointment.html', {
         'user':user,
-        'appointments':appointments, 
+        'appointments':appointments,
         'booking':booking,
     })
 
+
 def double_booked(request):
     return render(request, 'double_booked.html', {})
+
 
 def update_booking(request, pk):
     appointment = get_object_or_404(Booked_appointments, id=pk)
@@ -81,12 +87,12 @@ def update_booking(request, pk):
             updated_appointment.appointment = Availability.objects.get(id=request.POST.get("appointment"))
             updated_appointment.save()
             messages.success(request, 'Your appointment has been updated successfully.')
-            return redirect('account')  
+            return redirect('account')
     else:
         form = BookAppointment(instance=appointment)
     context = {
         'form': form,
-        'availability': Availability.objects.all()        
+        'availability': Availability.objects.all()       
     }
     return render(request, 'update_booking.html', context)   
 

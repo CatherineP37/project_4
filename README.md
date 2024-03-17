@@ -125,11 +125,23 @@ I was trying to prevent double bookings by filtering out appointments that had b
 
 ### W3C HTML Test
 
+The project passed the W3C HTML test.
+
+![W3C HTML Test](images/html.png)
+
 ### W3C CSS Test
+
+The project passed the W3C CSS test.
+
+![W3C CSS Test](images/CSS.png)
 
 ### JSHint Test 
 
+The JavaScript was tested with JSHint and no problems were found.
+
 ### CI Python Linter Test
+
+
 
 ### Browser Testing
 
