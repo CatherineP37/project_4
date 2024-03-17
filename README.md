@@ -1,9 +1,12 @@
-# Medical Appointment Booking App
+# Medical Appointment Booking Website
 
-This is an app that helps to make it easy for patients to book appointments at
-a medical centre. The app helps to reduce the number of calls coming through to
+This is a website that helps to make it easy for patients to book appointments at
+a medical centre. The website helps to reduce the number of calls coming through to
 the medical centre. This means that the patients who do call in don't have to
 wait as long for their call to be answered.
+
+The doctor adds their availablity in the admin area. The availability is added to 
+the list of available appointments in the booking form.
 
 Link to the deployed project:
 
@@ -11,7 +14,7 @@ Link to the deployed project:
 
 ## Scope
 
-The following must be included in the app:
+The following must be included in the project:
 
 - Patient log in screen
 - Sign up form for new account
@@ -20,7 +23,7 @@ The following must be included in the app:
 - Ability to view booked appointments
 - Ability to cancel appointments
 
-It's not necessary to include the following in the app:
+It's not necessary to include the following in the project:
 
 - Doctor log in screen
 - Patient notes
