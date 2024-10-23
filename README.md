@@ -28,9 +28,34 @@ It's not necessary to include the following in the project:
 - Doctor log in screen
 - Patient notes
 
-## Sitemap
+## User research
 
-![Sitemap](images/map.png)
+### Who are the users?
+
+- Patients at a medical centre
+
+### User research goals
+
+- Understand user goals when using this type of website
+- Understand user pain points when using websites
+- Understand what type of tasks users carry out on these types of websites
+
+### User interviews
+
+For the qualitative research, I interviewed people who had experience with booking medical appointments online.
+
+### Surveys
+
+For the quantitative research, I carried out a survey to find out about what users expect from a medical appointment booking website.
+
+### Key insights from the user research
+
+- Site visitors want to be able to set up an account
+- Site visitors want to sign in and out of their account easily
+- Site visitors want to see what appointments are available
+- Site visitors want to be able to book an appointment easily
+- Site visitors don't want to book an appointment that someone else has already booked
+- Site visitors want to be able to update or cancel their booking
 
 ## User Stories
 
@@ -40,20 +65,24 @@ Here is a picture of the GitHub project board for this project:
 
 Epic - patient account
 
-- As a patient I want to set up an account so that I can easily book appointments online.
-- As a patient I want to be able to sign in and out of my account easily.
+- As a patient I want to set up an account so that I can easily book appointments online
+- As a patient I want to be able to sign in and out of my account easily
   
 Epic - booking an appointment online
 
-- As a patient I want to book an appointment easily online.
-- As a patient I want to see a list of available appointments.
-- As a patient I don't want to book an appointment that someone else has booked.
+- As a patient I want to book an appointment easily online
+- As a patient I want to see a list of available appointments
+- As a patient I don't want to book an appointment that someone else has booked
 
 Epic - managing my appointments
 
-- As a patient I want the option to see the appointments that I've booked.
-- As a patient I want the option of updating my booking.
-- As a patient I want the option of cancelling my booking.
+- As a patient I want the option to see the appointments that I've booked
+- As a patient I want the option of updating my booking
+- As a patient I want the option of cancelling my booking
+
+## Sitemap
+
+![Sitemap](images/map.png)
 
 ## Wireframes
 
@@ -103,23 +132,9 @@ These are wireframes for the mobile screens.
 
 ![Sign out](images/sign_out.png)
 
-## Bugs
+# Build
 
-There are no current bugs in the project.
-
-These are some of the bugs that occurred during the development of the project:
-
-There was an issue with trying to get the dropdown menu to work. By mistake I hadn't put the link to the JavaScript file in the html file. After I added the link, the dropdown menu worked but was only showing the dropdown part while it was being pressed. Also the words were not visible and the width of the dropdown was very narrow and that's probably why the words weren't on it. I solved the issue by changing the css.
-
-The header was set to position: fixed and was covering the content. To solve this I increased the size of the margin at the top of the main section.
-
-I had problems deploying my project to Heroku. This was solved by adding the correct Config Vars to Heroku.
-
-The navigation menu was showing the same things for signed in users as signed out users. This was solved by changing the urls.
-
-The text on the buttons was not fitting on the buttons in the mobile view so I set the font size in percentage instead of pixels.
-
-I was trying to prevent double bookings by filtering out appointments that had been booked. It wasn't working and the booked appointments were still showing up on the list of available appointments. This was solved by editing the booking view.
+I built this project with HTML, CSS, JavaScript, Python and Django. 
 
 ## Testing
 
@@ -162,6 +177,24 @@ can log in. They can log in with their details. They can view the appointments t
 already booked and they can update or delete the bookings. They can use the booking form to book
 an appointment and they can choose from a list of available appointments.
 
+## Bugs
+
+There are no current bugs in the project.
+
+These are some of the bugs that occurred during the development of the project:
+
+There was an issue with trying to get the dropdown menu to work. By mistake I hadn't put the link to the JavaScript file in the html file. After I added the link, the dropdown menu worked but was only showing the dropdown part while it was being pressed. Also the words were not visible and the width of the dropdown was very narrow and that's probably why the words weren't on it. I solved the issue by changing the css.
+
+The header was set to position: fixed and was covering the content. To solve this I increased the size of the margin at the top of the main section.
+
+I had problems deploying my project to Heroku. This was solved by adding the correct Config Vars to Heroku.
+
+The navigation menu was showing the same things for signed in users as signed out users. This was solved by changing the urls.
+
+The text on the buttons was not fitting on the buttons in the mobile view so I set the font size in percentage instead of pixels.
+
+I was trying to prevent double bookings by filtering out appointments that had been booked. It wasn't working and the booked appointments were still showing up on the list of available appointments. This was solved by editing the booking view.
+
 ## Deployment
 
 This project was deployed using Heroku.
@@ -189,7 +222,6 @@ Tony Teaches Tech
 Dennis Ivy
 
 stackoverflow
-
 
 ## Acknowledgements
 
