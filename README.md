@@ -8,7 +8,7 @@ wait as long for their call to be answered.
 The doctor adds their availablity in the admin area. The availability is added to 
 the list of available appointments in the booking form.
 
-![Responsive Mockup](assets/images/prototype.png)
+![Responsive Mockup](images/prototype.png)
 
 Link to the deployed project:
 
