@@ -10,10 +10,6 @@ the list of available appointments in the booking form.
 
 ![Responsive Mockup](images/prototype.png)
 
-Link to the deployed project:
-
-[Deployed project](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
-
 ## Scope
 
 The following must be included in the project:
@@ -137,6 +133,10 @@ These are wireframes for the mobile screens.
 # Build
 
 I built this project with HTML, CSS, JavaScript, Python and Django. 
+
+Here is the link to the deployed project:
+
+[Deployed project](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
 
 ## Testing
 
