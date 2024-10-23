@@ -12,7 +12,7 @@ the list of available appointments in the booking form.
 
 Link to the deployed project:
 
-[Deployed website](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
+[Deployed project](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
 
 ## Scope
 
