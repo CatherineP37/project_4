@@ -148,7 +148,7 @@ The project passed the W3C HTML test.
 
 The project passed the W3C CSS test.
 
-![W3C CSS Test](images/CSS.png)
+![W3C CSS Test](images/css.png)
 
 ### JSHint Test 
 
