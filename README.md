@@ -10,6 +10,8 @@ the list of available appointments in the booking form.
 
 ![Responsive Mockup](images/prototype.png)
 
+## Table of contents
+
 ## Scope
 
 The following must be included in the project:
@@ -82,15 +84,19 @@ Epic - managing my appointments
 
 ![Sitemap](images/map.png)
 
+## Database Schema
+
+![database schema](images/database.png)
+
 ## Wireframes
 
 These are wireframes for the mobile screens.
 
 ![wireframes](images/wireframes.png)
 
-## Database Schema
+## Interactive Figma prototype
 
-![database schema](images/database.png)
+I made an interactive prototype in Figma and carried out usability tests with it. Here is a video of the prototype being tested:
 
 ## Features
 
