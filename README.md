@@ -57,7 +57,7 @@ For the quantitative research, I carried out a survey to find out about what use
 - Site visitors don't want to book an appointment that someone else has already booked
 - Site visitors want to be able to update or cancel their booking
 
-## User Stories
+## User stories
 
 Here is a picture of the GitHub project board for this project:
 
@@ -84,7 +84,7 @@ Epic - managing my appointments
 
 ![Sitemap](images/map.png)
 
-## Database Schema
+## Database schema
 
 ![database schema](images/database.png)
 
@@ -146,38 +146,38 @@ Here is the link to the deployed project:
 
 ## Testing
 
-### W3C HTML Test
+### W3C HTML test
 
 The project passed the W3C HTML test.
 
 ![W3C HTML Test](images/html.png)
 
-### W3C CSS Test
+### W3C CSS test
 
 The project passed the W3C CSS test.
 
 ![W3C CSS Test](images/css.png)
 
-### JSHint Test 
+### JSHint test 
 
 The JavaScript was tested with JSHint and no problems were found.
 
-### CI Python Linter Test
+### CI Python linter test
 
 Python was tested with the CI Python Linter. No major issues were found.
 
-### Browser Testing
+### Browser testing
 
 The website was tested on a variety of browsers. It was also tested in Google 
 Chrome DevTools to see what it looks like in a variety of screen sizes.
 
-### Lighthouse Testing
+### Lighthouse testing
 
 This is the Lighthouse test result:
 
 ![Lighthouse test result](images/lighthouse.png)
 
-### Manual Testing
+### Manual testing
 
 As I went through the project I manually tested each user story thoroughly. I tested the views, 
 the models, the booking form and the authentication. The user can create an account so that they
