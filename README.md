@@ -12,6 +12,19 @@ the list of available appointments in the booking form.
 
 ## Table of contents
 
+- [Scope](#scope)
+- [User research](#user-research)
+- [User stories](#user-stories)
+- [Sitemap](#sitemap)
+- [Wireframes](#wireframes)
+- [Interactive Figma prototype](#interactive-figma-prototype)
+- [Features](#features)
+- [Build](#build)   
+- [Testing](#testing)
+- [Bugs](#bugs)   
+- [Deployment](#deployment)
+- [Credits](#credits)
+
 ## Scope
 
 The following must be included in the project:
@@ -231,11 +244,7 @@ Dennis Ivy
 
 stackoverflow
 
-## Acknowledgements
 
-The tutors at Code Institute
-
-My mentor DevEd Bowers
 
 
 
