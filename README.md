@@ -65,7 +65,7 @@ For the quantitative research, I carried out a survey to find out about what use
 
 - Site visitors want to be able to set up an account
 - Site visitors want to sign in and out of their account easily
-- Site visitors want to see what appointments are available
+- Site visitors want to see a calendar showing available appointments
 - Site visitors want to be able to book an appointment easily
 - Site visitors don't want to book an appointment that someone else has already booked
 - Site visitors want to be able to update or cancel their booking
@@ -84,7 +84,7 @@ Epic - patient account
 Epic - booking an appointment online
 
 - As a patient I want to book an appointment easily online
-- As a patient I want to see a list of available appointments
+- As a patient I want to see a calendar showing available appointments
 - As a patient I don't want to book an appointment that someone else has booked
 
 Epic - managing my appointments
