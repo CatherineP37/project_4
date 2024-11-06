@@ -103,7 +103,7 @@ Epic - managing my appointments
 
 These are wireframes for the mobile screens.
 
-![wireframes](images/wireframing.png)
+![wireframes](images/wireframes.png)
 
 ## Interactive Figma prototype
 
