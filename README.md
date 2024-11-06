@@ -20,8 +20,7 @@ the list of available appointments in the booking form.
 - [Interactive Figma prototype](#interactive-figma-prototype)
 - [Features](#features)
 - [Build](#build)   
-- [Testing](#testing)
-- [Bugs](#bugs)   
+- [Testing](#testing)  
 - [Deployment](#deployment)
 - [Credits](#credits)
 
@@ -111,51 +110,11 @@ These are wireframes for the mobile screens.
 
 I made an interactive prototype in Figma and carried out usability tests with it. Here is a video of the prototype being tested:
 
-## Features
-
-### Header
-
-![Header](images/header.png)
-
-### Menu for users who are not signed in
-
-![Menu for users who are not signed in](images/menu_1.png)
-
-### Landing page
-
-![Landing page](images/landing_page.png)
-
-### Sign up form
-
-![Sign up form](images/sign_up.png)
-
-### Login form
-
-![Login form](images/login.png)
-
-### User account home page
-
-![User account home page](images/account.png)
-
-### Appointment booking form
-
-![Appointment booking form](images/booking.png)
-
-### Booked appointments page
-
-![Booked appointments page](images/bookings.png)
-
-### Sign out
-
-![Sign out](images/sign_out.png)
+https://github.com/user-attachments/assets/7aec1005-023b-4ad7-a664-952665c71e2a
 
 # Build
 
 I built this project with HTML, CSS, JavaScript, Python and Django. 
-
-Here is the link to the deployed project:
-
-[Deployed project](https://doctor-appointment-booker-567ff6ab7202.herokuapp.com/)
 
 ## Testing
 
@@ -184,37 +143,12 @@ Python was tested with the CI Python Linter. No major issues were found.
 The website was tested on a variety of browsers. It was also tested in Google 
 Chrome DevTools to see what it looks like in a variety of screen sizes.
 
-### Lighthouse testing
-
-This is the Lighthouse test result:
-
-![Lighthouse test result](images/lighthouse.png)
-
 ### Manual testing
 
 As I went through the project I manually tested each user story thoroughly. I tested the views, 
 the models, the booking form and the authentication. The user can create an account so that they
 can log in. They can log in with their details. They can view the appointments that they've
-already booked and they can update or delete the bookings. They can use the booking form to book
-an appointment and they can choose from a list of available appointments.
-
-## Bugs
-
-There are no current bugs in the project.
-
-These are some of the bugs that occurred during the development of the project:
-
-There was an issue with trying to get the dropdown menu to work. By mistake I hadn't put the link to the JavaScript file in the html file. After I added the link, the dropdown menu worked but was only showing the dropdown part while it was being pressed. Also the words were not visible and the width of the dropdown was very narrow and that's probably why the words weren't on it. I solved the issue by changing the css.
-
-The header was set to position: fixed and was covering the content. To solve this I increased the size of the margin at the top of the main section.
-
-I had problems deploying my project to Heroku. This was solved by adding the correct Config Vars to Heroku.
-
-The navigation menu was showing the same things for signed in users as signed out users. This was solved by changing the urls.
-
-The text on the buttons was not fitting on the buttons in the mobile view so I set the font size in percentage instead of pixels.
-
-I was trying to prevent double bookings by filtering out appointments that had been booked. It wasn't working and the booked appointments were still showing up on the list of available appointments. This was solved by editing the booking view.
+already booked and they can delete the bookings. 
 
 ## Deployment
 
