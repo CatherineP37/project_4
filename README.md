@@ -94,7 +94,7 @@ Epic - managing my appointments
 
 ## Sitemap
 
-![Sitemap](images/map.png)
+![Sitemap](images/sitemap.png)
 
 ## Database schema
 
