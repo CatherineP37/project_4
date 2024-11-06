@@ -18,7 +18,6 @@ the list of available appointments in the booking form.
 - [Sitemap](#sitemap)
 - [Wireframes](#wireframes)
 - [Interactive Figma prototype](#interactive-figma-prototype)
-- [Features](#features)
 - [Build](#build)   
 - [Testing](#testing)  
 - [Deployment](#deployment)
